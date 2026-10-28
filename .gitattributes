@@ -1,2 +1,5 @@
 # Conservar los bytes históricos y sus huellas al clonar en Windows.
 * -text
+*.pdf binary
+*.png binary
+*.zip binary
