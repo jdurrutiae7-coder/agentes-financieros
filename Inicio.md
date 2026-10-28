@@ -20,6 +20,7 @@ La configuración elegida para una nueva corrida puede diferir de la utilizada e
 - [Recorrido para presentar el proyecto](docs/recorrido.md): implementación, demostración y límites.
 - [Revisión del modelo](docs/revision.md): adaptaciones y límites del curso.
 - [Validación de esta organización](docs/2026-10-28_validacion_organizacion.md).
+- [Primera publicación en GitHub](docs/2026-10-28_repo_github.md): archivos, commits y comprobaciones.
 
 ## Para retomar una empresa
 
@@ -31,7 +32,7 @@ Abrir su `Inicio.md`, leer las fichas enlazadas y comprobar la fecha de corte. D
 | --- | --- |
 | Base local, índices por empresa y plantillas | Preparados el 28.oct.2026 |
 | Proyecto en Codex | Registrado como Agente Financiero, con esta carpeta como principal |
-| Repositorio privado en GitHub | [agentes-financieros](https://github.com/jdurrutiae7-coder/agentes-financieros), creado el 28.oct.2026; remoto origin configurado |
+| Repositorio privado en GitHub | [agentes-financieros](https://github.com/jdurrutiae7-coder/agentes-financieros), primera versión subida y verificada el 28.oct.2026; rama main conectada a origin/main |
 | Apertura de esta carpeta como vault de Obsidian | Pendiente de configurar |
 | Chats separados por empresa dentro del proyecto | Convención definida; no se crearon chats nuevos |
 
