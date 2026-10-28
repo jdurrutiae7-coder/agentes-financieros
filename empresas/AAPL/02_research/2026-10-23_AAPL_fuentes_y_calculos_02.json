@@ -1,0 +1,554 @@
+{
+  "fecha_corte": "2026-10-23",
+  "generado_santiago": "2026-10-23T22:52:28.778402-03:00",
+  "fuentes": {
+    "A": {
+      "titulo": "Apple 10-K FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "localizador": "Items 1, 1A, 7 y 8; estados pp.29,31,33; notas 4,7,13",
+      "periodo": "FY2025 terminado 2025-09-27; comparativos FY2024 y FY2023"
+    },
+    "B": {
+      "titulo": "Apple 10-Q Q3 FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "localizador": "Flujos p.6; MD&A pp.14-16; Part II Items 1 y 1A pp.20-21",
+      "periodo": "Trimestre y nueve meses terminados 2026-06-27"
+    },
+    "C": {
+      "titulo": "Apple comunicado Q3 FY2026",
+      "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+      "publicado": "2026-07-30"
+    },
+    "D": {
+      "titulo": "Dell 10-K FY2026",
+      "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000008/dell-20260130.htm",
+      "localizador": "Estados pp.69-72; segmentos Note 18; deuda incluye Dell Financial Services",
+      "periodo": "FY2026 terminado 2026-01-30; FY2025 terminado 2025-01-31"
+    },
+    "E": {
+      "titulo": "HP 10-K FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm",
+      "localizador": "Estados pp.50,52-53; Notes 7 y 8 pp.80-84",
+      "periodo": "FY2025 terminado 2025-10-31"
+    },
+    "F": {
+      "titulo": "Samsung resultados FY2025",
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_soi.pdf",
+      "localizador": "Estado consolidado p.9; importes KRW millones",
+      "periodo": "Año terminado 2025-12-31"
+    },
+    "G": {
+      "titulo": "Samsung balance FY2025",
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_bs.pdf",
+      "localizador": "pp.6-8; patrimonio atribuible a propietarios, no patrimonio con minoritarios",
+      "periodo": "2025-12-31 y 2024-12-31"
+    },
+    "H": {
+      "titulo": "Samsung flujo FY2025",
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_cf.pdf",
+      "localizador": "pp.15-16",
+      "periodo": "FY2025 y FY2024"
+    },
+    "I": {
+      "titulo": "Samsung notas FY2025",
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_note.pdf",
+      "localizador": "Notas 10,11,12,13 y 27; pp.56-60,76-77",
+      "periodo": "FY2025 y FY2024"
+    },
+    "J": {
+      "titulo": "IDC despachos Q3 calendario 2026",
+      "url": "https://www.idc.com/resource-center/press-releases/smartphone-shipments-decline-3q26/",
+      "publicado": "2026-10-14 (cabecera web 2026-10-15)",
+      "localizador": "Tabla de proveedores Q3 2026, preliminar; excluye equipos reacondicionados"
+    },
+    "K": {
+      "titulo": "IDC despachos año calendario 2025",
+      "url": "https://www.idc.com/resource-center/press-releases/q425mobilephonetop5/",
+      "publicado": "2026-01-13",
+      "localizador": "Tabla CY2025, con base CY2024 revisada, preliminar"
+    },
+    "L": {
+      "titulo": "IDC comunicado CY2023, copia distribuida por Business Wire",
+      "url": "https://markets.financialcontent.com/wral/article/bizwire-2024-1-15-apple-grabs-the-top-spot-in-the-smartphone-market-in-2023-along-with-record-high-market-share-despite-the-overall-market-dropping-32-according-to-idc-tracker",
+      "publicado": "2024-01-15",
+      "localizador": "Tabla CY2023 y base CY2022; fuente autora IDC"
+    },
+    "M": {
+      "titulo": "Omdia mercado 2025",
+      "url": "https://omdia.tech.informa.com/pr/2026/jan/global-smartphone-market-grew-2percent-in-2025-while-memory-headwinds-set-the-stage-for-a-challenging-2026",
+      "publicado": "2026-01-29"
+    },
+    "N": {
+      "titulo": "Canalys mercado 2020",
+      "url": "https://canalys-prod-public.s3.eu-west-1.amazonaws.com/static/press_release/2021/CanalysWorldwide-smartphone-shipments-Q4-2020.pdf",
+      "publicado": "2021-01-28",
+      "localizador": "Tabla Full-year 2020, p.4 de PDF"
+    },
+    "O": {
+      "titulo": "Canalys mercado 2022",
+      "url": "https://canalys.com/static/press_release/2023/1343666490Worldwide-smartphone-market-Q4-2022.pdf",
+      "publicado": "2023-01-31",
+      "localizador": "Tabla Full-year 2022, p.3 de PDF"
+    },
+    "P": {
+      "titulo": "FRED PIB real GDPC1",
+      "url": "https://fred.stlouisfed.org/data/GDPC1",
+      "actualizado": "2026-09-30",
+      "unidad": "Miles de millones de USD encadenados 2017, nivel desestacionalizado a tasa anual"
+    },
+    "Q": {
+      "titulo": "FRED IPC CPIAUCSL",
+      "url": "https://fred.stlouisfed.org/data/CPIAUCSL",
+      "actualizado": "2026-10-14",
+      "unidad": "Indice 1982-84=100, desestacionalizado"
+    },
+    "R": {
+      "titulo": "FRED tasa efectiva FEDFUNDS",
+      "url": "https://fred.stlouisfed.org/data/FEDFUNDS",
+      "actualizado": "2026-10-01",
+      "unidad": "Porcentaje, promedio mensual efectivo, no rango objetivo"
+    },
+    "S": {
+      "titulo": "FRED Treasury DGS10",
+      "url": "https://fred.stlouisfed.org/data/DGS10",
+      "actualizado": "2026-10-23",
+      "unidad": "Porcentaje, observación diaria"
+    },
+    "T": {
+      "titulo": "FRED desempleo UNRATE",
+      "url": "https://fred.stlouisfed.org/data/UNRATE",
+      "actualizado": "2026-10-02",
+      "unidad": "Porcentaje desestacionalizado"
+    },
+    "U": {
+      "titulo": "Yahoo Finance, instantáneas de mercado",
+      "url": "https://finance.yahoo.com/quote/AAPL/",
+      "consultado": "2026-10-23, hora de Santiago",
+      "localizador": "get_info() de AAPL, 005930.KS, DELL y HPQ; múltiplos TTM del proveedor, no recalculados con FY2025"
+    },
+    "V": {
+      "titulo": "Samsung resultados FY2022",
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2022_con_quarter04_soi.pdf",
+      "localizador": "p.8, ingresos consolidados KRW millones"
+    },
+    "W": {
+      "titulo": "Dell resultados FY2024, base FY2023",
+      "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/165/dell-technologies-delivers-fourth-quarter-and-full-year-fiscal-2024-financial-results",
+      "publicado": "2024-02-29",
+      "localizador": "Ingresos FY2023 USD102301 millones; cierre 2023-02-03"
+    },
+    "X": {
+      "titulo": "HP resultados FY2023, base FY2022 corregida",
+      "url": "https://investor.hp.com/news-events/news/news-details/2023/HP-Inc.-Reports-Fiscal-2023-Full-Year-and-Fourth-Quarter-Results/default.aspx",
+      "localizador": "Ingresos FY2022 USD62910 millones; cierre 2022-10-31"
+    },
+    "Y": {
+      "titulo": "Apple 10-K FY2024, base FY2022",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+      "localizador": "Estado de resultados p.29; ingresos FY2022 USD394328 millones, cierre 2022-09-24"
+    },
+    "Z": {
+      "titulo": "State Street SPY",
+      "url": "https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy",
+      "localizador": "Objetivo S&P 500 y cartera a octubre 2026"
+    },
+    "AA": {
+      "titulo": "State Street XLK",
+      "url": "https://www.ssga.com/us/en/individual/etfs/state-street-technology-select-sector-spdr-etf-xlk",
+      "localizador": "Objetivo sector tecnología del S&P 500; incluye hardware, software y semiconductores"
+    }
+  },
+  "datos_primarios_pares": {
+    "AAPL": {
+      "moneda": "USD millones",
+      "cierre": "2025-09-27",
+      "cierre_base": "2022-09-24",
+      "ventas": 416161,
+      "ventas_base": 394328,
+      "bruto": 195201,
+      "operativo": 133050,
+      "neto": 112010,
+      "neto_propietarios": 112010,
+      "patrimonio": 73733,
+      "patrimonio_previo": 56950,
+      "deuda": 98657,
+      "caja": 35934,
+      "da": 11698,
+      "cfo": 111482,
+      "fuentes": [
+        "A",
+        "Y"
+      ]
+    },
+    "Samsung": {
+      "moneda": "KRW millones",
+      "cierre": "2025-12-31",
+      "cierre_base": "2022-12-31",
+      "ventas": 333605938,
+      "ventas_base": 302231360,
+      "bruto": 131370425,
+      "operativo": 43601051,
+      "neto": 45206805,
+      "neto_propietarios": 44260956,
+      "patrimonio": 424313255,
+      "patrimonio_previo": 391687603,
+      "deuda": 20397198,
+      "caja": 57856378,
+      "da": 46926592,
+      "cfo": 85315148,
+      "fuentes": [
+        "F",
+        "G",
+        "H",
+        "I",
+        "V"
+      ]
+    },
+    "Dell": {
+      "moneda": "USD millones",
+      "cierre": "2026-01-30",
+      "cierre_base": "2023-02-03",
+      "ventas": 113538,
+      "ventas_base": 102301,
+      "bruto": 22707,
+      "operativo": 8149,
+      "neto": 5936,
+      "neto_propietarios": 5936,
+      "patrimonio": -2470,
+      "patrimonio_previo": -1482,
+      "deuda": 31503,
+      "caja": 11528,
+      "da": 3029,
+      "cfo": 11185,
+      "fuentes": [
+        "D",
+        "W"
+      ]
+    },
+    "HP": {
+      "moneda": "USD millones",
+      "cierre": "2025-10-31",
+      "cierre_base": "2022-10-31",
+      "ventas": 55295,
+      "ventas_base": 62910,
+      "bruto": 11392,
+      "operativo": 3174,
+      "neto": 2529,
+      "neto_propietarios": 2529,
+      "patrimonio": -346,
+      "patrimonio_previo": -1323,
+      "deuda": 9666,
+      "caja": 3690,
+      "da": null,
+      "cfo": 3697,
+      "flujo_depreciacion_amortizacion_deterioro": 916,
+      "deterioro_intangibles_conocido": 92,
+      "fuentes": [
+        "E",
+        "X"
+      ]
+    }
+  },
+  "calculos_pares": {
+    "AAPL": {
+      "cagr_3a": 0.01812535743479393,
+      "margen_bruto": 0.4690516410716045,
+      "margen_operativo": 0.31970799762591884,
+      "roe": 1.7142244974480232,
+      "patrimonio_promedio": 65341.5,
+      "deuda_neta": 62723,
+      "ebitda_operativo_proxy": 144748,
+      "deuda_neta_ebitda": 0.43332550363390165,
+      "conversion_caja": 0.995286135166503,
+      "pe_ttm": 39.87672,
+      "ev_ebitda_ttm": 30.345
+    },
+    "Samsung": {
+      "cagr_3a": 0.0334704949871083,
+      "margen_bruto": 0.3937892286557561,
+      "margen_operativo": 0.1306962677624761,
+      "roe": 0.10848262122783209,
+      "patrimonio_promedio": 408000429.0,
+      "deuda_neta": -37459180,
+      "ebitda_operativo_proxy": 90527643,
+      "deuda_neta_ebitda": -0.4137872008884623,
+      "conversion_caja": 1.8872191476482356,
+      "pe_ttm": null,
+      "ev_ebitda_ttm": 5.555
+    },
+    "Dell": {
+      "cagr_3a": 0.035349838884853435,
+      "margen_bruto": 0.19999471542567246,
+      "margen_operativo": 0.07177332699184415,
+      "roe": null,
+      "patrimonio_promedio": -1976.0,
+      "deuda_neta": 19975,
+      "ebitda_operativo_proxy": 11178,
+      "deuda_neta_ebitda": 1.7869923063159778,
+      "conversion_caja": 1.884265498652291,
+      "pe_ttm": 26.537209,
+      "ev_ebitda_ttm": 17.71
+    },
+    "HP": {
+      "cagr_3a": -0.04209584055759441,
+      "margen_bruto": 0.20602224432588842,
+      "margen_operativo": 0.057401211682792296,
+      "roe": null,
+      "patrimonio_promedio": -834.5,
+      "deuda_neta": 5976,
+      "ebitda_operativo_proxy": null,
+      "deuda_neta_ebitda": null,
+      "conversion_caja": 1.4618426255436932,
+      "pe_ttm": 12.839695,
+      "ev_ebitda_ttm": 7.875
+    }
+  },
+  "medianas_pares_sin_apple": {
+    "cagr_3a": {
+      "n": 3,
+      "valor": 0.0334704949871083
+    },
+    "margen_bruto": {
+      "n": 3,
+      "valor": 0.20602224432588842
+    },
+    "margen_operativo": {
+      "n": 3,
+      "valor": 0.07177332699184415
+    },
+    "roe": {
+      "n": 1,
+      "valor": null
+    },
+    "deuda_neta_ebitda": {
+      "n": 2,
+      "valor": 0.6866025527137578
+    },
+    "conversion_caja": {
+      "n": 3,
+      "valor": 1.884265498652291
+    },
+    "pe_ttm": {
+      "n": 2,
+      "valor": 19.688452
+    },
+    "ev_ebitda_ttm": {
+      "n": 3,
+      "valor": 7.875
+    }
+  },
+  "macro_niveles_transcritos": {
+    "GDPC1": {
+      "2024Q2": 23320.074,
+      "2025Q2": 23884.563,
+      "2026Q2": 24408.011
+    },
+    "CPIAUCSL": {
+      "2024-09": 314.732,
+      "2025-09": 324.245,
+      "2026-09": 336.298
+    },
+    "FEDFUNDS": {
+      "2025-09": 4.22,
+      "2026-09": 3.75
+    },
+    "DGS10": {
+      "2025-10-22": 3.97,
+      "2026-10-22": 4.96
+    },
+    "UNRATE": {
+      "2025-09": 4.4,
+      "2026-09": 4.2
+    }
+  },
+  "macro_variaciones_calculadas": {
+    "pib_yoy_actual": 2.1915745328897174,
+    "pib_yoy_previo": 2.4206141026825057,
+    "ipc_yoy_actual": 3.7172508442689933,
+    "ipc_yoy_previo": 3.0225715847133294
+  },
+  "apple_datos": {
+    "servicios_2025": 109158,
+    "servicios_2024": 96169,
+    "ventas_2024": 391035,
+    "americas_2025": 178353,
+    "americas_2024": 167045,
+    "europa_2025": 111032,
+    "europa_2024": 101328,
+    "china_2025": 64377,
+    "china_2024": 66952,
+    "japon_2025": 28703,
+    "japon_2024": 25052,
+    "asia_resto_2025": 33696,
+    "asia_resto_2024": 30658,
+    "bruto_servicios_2025": 82314,
+    "bruto_productos_2025": 112887,
+    "ventas_productos_2025": 307003,
+    "ventas_usa_2025": 151790,
+    "iphone_2025": 209586,
+    "cfo_2024": 118254,
+    "capex_2025": 12715,
+    "capex_2024": 9447,
+    "impuestos_pagados_2025": 43369,
+    "impuestos_pagados_2024": 26102,
+    "q3_2026_ventas": 109417,
+    "q3_2025_ventas": 94036,
+    "q3_2026_iphone": 54252,
+    "q3_2025_iphone": 44582,
+    "q3_2026_servicios": 30739,
+    "q3_2025_servicios": 27423,
+    "q3_2026_bruto_pct": 50.1,
+    "q3_2026_reembolsos_aranceles_pp_aprox": 2,
+    "9m_2026_cfo": 116996,
+    "9m_2025_cfo": 81754,
+    "9m_2026_capex": 6799,
+    "9m_2025_capex": 9473
+  },
+  "apple_calculos": {
+    "aporte_servicios_aumento_ventas": 0.5169545490726737,
+    "participacion_servicios_bruto": 0.42168841348148833,
+    "participacion_servicios_ventas": 0.2622975242754607,
+    "margen_servicios": 0.754081240037377,
+    "margen_productos": 0.3677065044966987,
+    "participacion_iphone": 0.5036175903075973,
+    "participacion_fuera_usa": 0.6352613531782171,
+    "participacion_china": 0.15469253486030646,
+    "fcf_2025": 98767,
+    "fcf_2024": 108807,
+    "delta_cfo": -6772,
+    "delta_capex": 3268,
+    "delta_fcf": -10040,
+    "delta_impuestos_pagados": 17267,
+    "fcf_9m_2026": 110197,
+    "fcf_9m_2025": 72281,
+    "aporte_incremental_americas": 11308,
+    "aporte_incremental_europa": 9704,
+    "aporte_incremental_china": -2575,
+    "aporte_incremental_japon": 3651,
+    "aporte_incremental_asia_resto": 3038
+  },
+  "discrepancias": [
+    {
+      "empresa": "Dell",
+      "metrica": "Operating Income",
+      "periodo": "FY2026",
+      "unidad": "USD millones",
+      "yahoo": 8446,
+      "reporte": 8149,
+      "fuente": "D",
+      "decision": "Usar resultado operativo publicado GAAP."
+    },
+    {
+      "empresa": "HP",
+      "metrica": "Operating Income",
+      "periodo": "FY2025",
+      "unidad": "USD millones",
+      "yahoo": 3624,
+      "reporte": 3174,
+      "fuente": "E",
+      "decision": "Usar resultado operativo publicado GAAP."
+    },
+    {
+      "empresa": "HP",
+      "metrica": "D&A del flujo",
+      "periodo": "FY2025",
+      "unidad": "USD millones",
+      "yahoo": 916,
+      "reporte": "916 incluye depreciación, amortización y deterioros",
+      "fuente": "E",
+      "decision": "No calcular deuda neta/EBITDA hasta reconciliar D&A; deterioros intangibles revelados 65+27=92."
+    },
+    {
+      "empresa": "Samsung",
+      "metrica": "Total Debt",
+      "periodo": "FY2025",
+      "unidad": "KRW millones",
+      "yahoo": 25239139,
+      "reporte_sin_arrendamientos": 20397198,
+      "fuente": "I",
+      "decision": "Excluir pasivos de arrendamientos por 1168438+3673503, consistentes con definición Apple; conservar bono corriente y no corriente."
+    }
+  ],
+  "mercado": {
+    "IDC_2025_millones": 1260.3,
+    "IDC_crecimiento_2025_pct": 1.9,
+    "Omdia_2025_millones": 1250,
+    "Omdia_crecimiento_2025_pct": 2,
+    "cuota_Apple_IDC_anual_pct": {
+      "2022": 18.8,
+      "2023": 20.1,
+      "2024": 18.9,
+      "2025": 19.7
+    },
+    "Q3_2026": {
+      "total_millones": 255.3,
+      "total_Q3_2025_millones": 327.3,
+      "Apple_millones": 57.3,
+      "Apple_anterior_millones": 59.7,
+      "Apple_cuota_pct": 22.4,
+      "Apple_cuota_anterior_pct": 18.2,
+      "CR3_cuotas_publicadas_pct": 57.0
+    },
+    "metodo": "Estimaciones de despachos nuevos al canal, no usuarios ni sell-through. Revisiones entre publicaciones, no una sola vintage. No empalmar anual con trimestre como serie homogénea."
+  },
+  "multiples_mercado": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "currency": "USD",
+      "regularMarketTime": 1792785601,
+      "regularMarketPrice": 347.725,
+      "marketCap": 5074761285632,
+      "trailingPE": 39.87672,
+      "enterpriseToEbitda": 30.345
+    },
+    "Samsung": {
+      "symbol": "005930.KS",
+      "currency": "KRW",
+      "regularMarketTime": 1792737004,
+      "regularMarketPrice": 215500.0,
+      "marketCap": 1403319360684032,
+      "trailingPE": null,
+      "enterpriseToEbitda": 5.555
+    },
+    "Dell": {
+      "symbol": "DELL",
+      "currency": "USD",
+      "regularMarketTime": 1792785769,
+      "regularMarketPrice": 456.44,
+      "marketCap": 290210381824,
+      "trailingPE": 26.537209,
+      "enterpriseToEbitda": 17.71
+    },
+    "HP": {
+      "symbol": "HPQ",
+      "currency": "USD",
+      "regularMarketTime": 1792785603,
+      "regularMarketPrice": 33.64,
+      "marketCap": 30336247808,
+      "trailingPE": 12.839695,
+      "enterpriseToEbitda": 7.875
+    }
+  },
+  "formulas": {
+    "cagr": "(ingresos finales / iniciales)^(1/3)-1; tres intervalos fiscales",
+    "margenes": "Resultado publicado / ventas",
+    "ROE": "Utilidad atribuible a propietarios / promedio patrimonio atribuible; N/M si promedio negativo",
+    "deuda_neta": "Deuda financiera sin leases - caja y equivalentes; no descuenta inversiones",
+    "EBITDA_proxy": "Resultado operativo publicado + D&A del flujo, no EBITDA TTM del proveedor. HP no reconciliado, por eso N/D",
+    "conversion_caja": "CFO consolidado / utilidad neta consolidada, incluye minoritarios en Samsung",
+    "FCF_Apple": "CFO - compras de PP&E, ambas partidas del mismo período",
+    "variacion_interanual": "Nivel / nivel del mismo período del año anterior - 1"
+  },
+  "benchmark": {
+    "principal": "SPY",
+    "sensibilidad": "XLK",
+    "status": "Sugerencia de investigación para Skill03, no cambio ejecutado en config.json ni tasa libre de riesgo"
+  },
+  "controles": {
+    "suma_aportes_geograficos": "OK",
+    "puente_fcf": "OK",
+    "deuda_samsung_sin_leases": "OK",
+    "da_samsung_notas10_11": "OK",
+    "sin_precio_objetivo": true
+  }
+}

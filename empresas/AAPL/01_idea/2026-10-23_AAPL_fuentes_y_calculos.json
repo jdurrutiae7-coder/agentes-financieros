@@ -1,0 +1,217 @@
+{
+  "fecha_analisis": "2026-10-23",
+  "consulta_santiago": "2026-10-23T22:03:39.837206-03:00",
+  "unidades_estados": "USD millones",
+  "perfil": {
+    "empresa": "Apple Inc.",
+    "ticker": "AAPL",
+    "cik": "0000320193",
+    "fecha_eleccion": "2026-10-23",
+    "industria": "Tecnología",
+    "segmento": "Hardware",
+    "perfil_empresa": "Gigante consolidada",
+    "motivo_personal": "No indicado por Chumi",
+    "preferencia_dividendos_crecimiento": "No consultada"
+  },
+  "fuentes": {
+    "10K_2025": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "localizadores": "Item 7 pp. 22-25; Item 8 pp. 29,31,33; Note 7 p.40; Note 13 p.48"
+    },
+    "10K_2024": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+      "localizadores": "Item 8 p.29 (ventas 2022); p.31 (balance 2023)"
+    },
+    "10Q_Q3_2026": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "localizadores": "Item 2 pp.14-16"
+    },
+    "comunicado_Q3_2026": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+    "Yahoo_AAPL": "https://finance.yahoo.com/quote/AAPL/",
+    "FRED_FEDFUNDS": "https://fred.stlouisfed.org/series/FEDFUNDS",
+    "FRED_DGS10": "https://fred.stlouisfed.org/series/DGS10"
+  },
+  "datos_transcritos_SEC": {
+    "2022": {
+      "ventas": 394328,
+      "cierre": "2022-09-24"
+    },
+    "2023": {
+      "cierre": "2023-09-30",
+      "ventas": 383285,
+      "margen_bruto_monto": 169148,
+      "resultado_operativo": 114301,
+      "utilidad_neta": 96995,
+      "cfo": 110543,
+      "capex": 10959,
+      "depreciacion_amortizacion": 11519,
+      "commercial_paper": 5985,
+      "deuda_plazo_corriente": 9822,
+      "deuda_plazo_no_corriente": 95281,
+      "caja_equivalentes": 29965
+    },
+    "2024": {
+      "cierre": "2024-09-28",
+      "ventas": 391035,
+      "margen_bruto_monto": 180683,
+      "resultado_operativo": 123216,
+      "utilidad_neta": 93736,
+      "cfo": 118254,
+      "capex": 9447,
+      "depreciacion_amortizacion": 11445,
+      "commercial_paper": 9967,
+      "deuda_plazo_corriente": 10912,
+      "deuda_plazo_no_corriente": 85750,
+      "caja_equivalentes": 29943
+    },
+    "2025": {
+      "cierre": "2025-09-27",
+      "ventas": 416161,
+      "margen_bruto_monto": 195201,
+      "resultado_operativo": 133050,
+      "utilidad_neta": 112010,
+      "cfo": 111482,
+      "capex": 12715,
+      "depreciacion_amortizacion": 11698,
+      "commercial_paper": 7979,
+      "deuda_plazo_corriente": 12350,
+      "deuda_plazo_no_corriente": 78328,
+      "caja_equivalentes": 35934,
+      "servicios": 109158,
+      "servicios_margen_bruto_monto": 82314,
+      "iphone": 209586,
+      "mac": 33708,
+      "ipad": 28023,
+      "wearables_hogar_accesorios": 35686,
+      "ventas_eeuu": 151790,
+      "valores_negociables_corrientes": 18763,
+      "valores_negociables_no_corrientes": 77723
+    }
+  },
+  "calculos": {
+    "2023": {
+      "crecimiento_ventas": -0.02800460530319937,
+      "margen_bruto": 0.4413112957720756,
+      "margen_operativo": 0.2982141226502472,
+      "fcf": 99584,
+      "deuda_financiera": 111088,
+      "deuda_neta": 81123,
+      "ebitda_operativo_proxy": 125820,
+      "deuda_neta_ebitda_proxy": 0.6447544110634239
+    },
+    "2024": {
+      "crecimiento_ventas": 0.02021994077514111,
+      "margen_bruto": 0.4620634981523393,
+      "margen_operativo": 0.31510222870075566,
+      "fcf": 108807,
+      "deuda_financiera": 106629,
+      "deuda_neta": 76686,
+      "ebitda_operativo_proxy": 134661,
+      "deuda_neta_ebitda_proxy": 0.5694744580836323
+    },
+    "2025": {
+      "crecimiento_ventas": 0.06425511782832749,
+      "margen_bruto": 0.4690516410716045,
+      "margen_operativo": 0.31970799762591884,
+      "fcf": 98767,
+      "deuda_financiera": 98657,
+      "deuda_neta": 62723,
+      "ebitda_operativo_proxy": 144748,
+      "deuda_neta_ebitda_proxy": 0.43332550363390165
+    }
+  },
+  "mezcla_ingresos_2025": {
+    "iphone": 0.5036175903075973,
+    "mac": 0.08099749856425759,
+    "ipad": 0.06733692008621663,
+    "wearables_hogar_accesorios": 0.08575046676646779,
+    "servicios": 0.2622975242754607
+  },
+  "ventas_fuera_eeuu_2025": 0.6352613531782171,
+  "participacion_servicios_margen_bruto_2025": 0.42168841348148833,
+  "variacion_fcf_2025": -0.09227347505215655,
+  "definiciones": {
+    "FCF": "CFO - pagos para adquirir PP&E, capex mostrado como monto positivo",
+    "Deuda_neta": "Commercial paper + deuda a plazo corriente + deuda a plazo no corriente - caja y equivalentes; excluye valores negociables y arrendamientos",
+    "EBITDA_operativo_proxy": "Resultado operativo + depreciación y amortización del flujo de caja; cálculo propio, no EBITDA divulgado por Apple",
+    "margenes": "Resultado respectivo / ingresos",
+    "crecimiento": "Ingresos año actual / ingresos año anterior - 1"
+  },
+  "macro": {
+    "FEDFUNDS": {
+      "valor_pct": 3.75,
+      "periodo": "2026-09",
+      "tipo": "tasa efectiva promedio mensual, no rango objetivo de la Fed"
+    },
+    "DGS10": {
+      "valor_pct": 4.96,
+      "fecha_observacion": "2026-10-22"
+    }
+  },
+  "actualizacion_trimestral": {
+    "periodo": "Q3 FY2026, terminado 2026-06-27",
+    "ventas_usd_millones": 109417,
+    "crecimiento_ventas_reportado_pct": 16,
+    "servicios_usd_millones": 30739,
+    "crecimiento_servicios_reportado_pct": 12,
+    "margen_bruto_reportado_pct": 50.1,
+    "beneficio_reembolsos_arancelarios_puntos_porcentuales_aprox": 2
+  },
+  "datos_yahoo_originales": {
+    "symbol": "AAPL",
+    "currency": "USD",
+    "marketCap": 5074761285632,
+    "regularMarketPrice": 347.725,
+    "regularMarketTime": 1792785601,
+    "trailingPE": 39.87672,
+    "enterpriseToEbitda": 30.345,
+    "dividendRate": 1.08,
+    "dividendYield": 0.31,
+    "fullTimeEmployees": 150000,
+    "mostRecentQuarter": 1782518400
+  },
+  "pares": {
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "longName": "Alphabet Inc.",
+      "currency": "USD",
+      "marketCap": 3916147458048,
+      "regularMarketTime": 1792785601,
+      "fuente": "https://finance.yahoo.com/quote/GOOGL/",
+      "producto_fuente": "https://store.google.com/category/phones"
+    },
+    "005930.KS": {
+      "symbol": "005930.KS",
+      "longName": "Samsung Electronics Co., Ltd.",
+      "currency": "KRW",
+      "marketCap": 1403319360684032,
+      "regularMarketTime": 1792737004,
+      "fuente": "https://finance.yahoo.com/quote/005930.KS/",
+      "producto_fuente": "https://www.samsung.com/us/smartphones/"
+    },
+    "DELL": {
+      "symbol": "DELL",
+      "longName": "Dell Technologies Inc.",
+      "currency": "USD",
+      "marketCap": 290210381824,
+      "regularMarketTime": 1792785769,
+      "fuente": "https://finance.yahoo.com/quote/DELL/",
+      "producto_fuente": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000008/dell-20260130.htm"
+    },
+    "HPQ": {
+      "symbol": "HPQ",
+      "longName": "HP Inc.",
+      "currency": "USD",
+      "marketCap": 30336247808,
+      "regularMarketTime": 1792785603,
+      "fuente": "https://finance.yahoo.com/quote/HPQ/",
+      "producto_fuente": "https://www.sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm"
+    }
+  },
+  "control": "33 comparaciones de cifras SEC versus históricos Yahoo coinciden; fechas Yahoo normalizadas al 30 de septiembre, conservadas las fechas SEC reales en la tabla",
+  "faltantes": [
+    "Base activa por producto y ARPU de Servicios: no encontrados en el 10-K FY2025 y 10-Q Q3 FY2026 revisados",
+    "Empleo actual: 166000 equivalentes de tiempo completo en SEC al 2025-09-27 frente a 150000 fullTimeEmployees en Yahoo sin período identificable; no se homologan",
+    "Valor intrínseco y precio objetivo: fuera del alcance de skill 01"
+  ]
+}

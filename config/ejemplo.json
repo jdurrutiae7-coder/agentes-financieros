@@ -1,0 +1,14 @@
+{
+  "ticker": "AAPL",
+  "benchmark": "SPY",
+  "moneda": "USD",
+  "anos_modelo": 10,
+  "anos_backtest": 5,
+  "horizonte_dias": 252,
+  "simulaciones": 10000,
+  "semilla": 42,
+  "tasa_libre_riesgo": 0.04,
+  "tasa_fuente": "Supuesto del profesor, no verificado como tasa vigente",
+  "tasa_fecha": null,
+  "deriva": "libre_de_riesgo"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "archivo": "00-LEEME.md",
+    "sha256": "33e517c0465fdbf02d49f3d85f46b76423e8b50360696ad43f83059c62428d57"
+  },
+  {
+    "archivo": "01-idea-generation.md",
+    "sha256": "f8e19ed328f9d34479b0d9da820d05a32b63629e44223e184dc777dda263f768"
+  },
+  {
+    "archivo": "02-research-competitivo.md",
+    "sha256": "5c1399a9c80aa764217e83bc68440aebbdbcf8037eee506d457b6a8a6761060c"
+  },
+  {
+    "archivo": "03-analisis-cuantitativo-COLAB.ipynb",
+    "sha256": "2cc004dc90ab6ed3366493ebf39448d6eed554b5e4457a3534ad81df7c1cb23a"
+  },
+  {
+    "archivo": "03-analisis-cuantitativo.md",
+    "sha256": "6b1b5b4797c4808d80b4d62e7191e9ee2d4a56012c31c33d02dd540f3ecd4400"
+  },
+  {
+    "archivo": "04-debate-tres-agentes.md",
+    "sha256": "0f4daca7f6002813981860b0edc40d5947a322c85c162e9ff7cc33100f872453"
+  }
+]

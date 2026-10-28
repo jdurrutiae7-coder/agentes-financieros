@@ -1,0 +1,34 @@
+{
+  "modo": "REAL",
+  "fuente": "Yahoo Finance, cierre ajustado por dividendos y splits",
+  "creado_utc": "2026-10-24T02:04:36.853652+00:00",
+  "repetida_desde": "C:\\Users\\newma\\Documents\\Codex\\2026-10-23\\cod\\outputs\\agentes-financieros\\empresas\\AAPL\\03_cuantitativo\\2026-10-23_230246_610362_SPY_REAL",
+  "python": "3.12.14",
+  "versiones": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1",
+    "arch": "8.0.0",
+    "statsmodels": "0.15.0",
+    "yfinance": "1.7.0"
+  },
+  "motor_sha256": "86e4aa190c6c77b81b8045778ddb0dceca16208abe7fb1ba3120baeda765d064",
+  "ejecutor_sha256": "5657b8e8665a85a2468565201e711f128a7c73a8825d4aad05d81de370e44050",
+  "config_sha256": "8c410bd6f2907f2eef8a237b0630cd5ff0d2a5921533c29d2499dfed5ed0b8ef",
+  "precios_archivo": "AAPL_2026-10-23_precios.csv",
+  "precios_sha256": "5fa996842ae3d8ecf53ee1048d5509f2742ae81d686c55be43ecf3b3020c6489",
+  "opciones_sha256": "61ffec61bc2f96a126d6cbec02592b585db12797b4c43f935f58006587d27b1e",
+  "monedas_verificadas": {
+    "AAPL": "USD",
+    "SPY": "USD"
+  },
+  "backtest_efectivo": {
+    "desde": "2021-10-18",
+    "hasta": "2026-10-23",
+    "observaciones": 1260
+  },
+  "avisos": [
+    "La tasa libre de riesgo es un supuesto sin fecha vigente verificada."
+  ]
+}

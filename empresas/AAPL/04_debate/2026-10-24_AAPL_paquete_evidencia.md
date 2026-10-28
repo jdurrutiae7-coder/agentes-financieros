@@ -1,0 +1,64 @@
+# Paquete común E# | Apple AAPL | Skill 04
+
+Debate: 24.oct.2026. Corte de la evidencia: 23.oct.2026. Las fichas 01, 02 y 03 están disponibles; no se incorporan datos nuevos ni recomendaciones de operaciones.
+
+Los agentes defienden posturas asignadas; el neutral arbitra. No usar web, otras fuentes ni cálculos adicionales. Cada argumento cita E#. Inferencias propias se marcan como opinión. Si falta una cifra o fecha: dato faltante. Máximo 250 palabras por intervención. Responder en español sin guiones largos.
+
+| ID | Evidencia | Tipo | Ficha / fuentes |
+| --- | --- | --- | --- |
+| E1 | Métrica a seguir: crecimiento y margen de Servicios. Q3 FY2026 terminado 27.jun.2026: ingresos de Servicios USD30.739 millones, +12% interanual. FY2025 terminado 27.sep.2025: Servicios representa 26,2% de ingresos y 42,2% del beneficio bruto. | Hecho reportado y cálculos | 01, 02 / A, B |
+| E2 | Apple FY2023/2024/2025: ingresos USD383.285/391.035/416.161 millones. CAGR FY2022-25 1,8% anual. FY2025 ventas crecen 6,4% frente a FY2024. CAGR de ingresos no es CAGR bursátil. | Cálculo sobre reportes | 01, 02 / A, Y |
+| E3 | Margen operativo Apple FY2023/2024/2025: 29,8%/31,5%/32,0%. FY2025 margen bruto 46,9%; Servicios 75,4% y Productos 36,8%. El patrón de margen y ventas no aísla causalmente escala de mezcla de negocio. | Cálculo | 01, 02 / A |
+| E4 | Apple FY2025: deuda financiera USD98.657 millones menos caja/equivalentes USD35.934 millones = deuda neta USD62.723 millones; deuda neta/EBITDA operativo proxy 0,43x. Excluye inversiones negociables y arrendamientos. EBITDA proxy = resultado operativo + D&A. No es EBITDA TTM del proveedor. | Cálculo con definición explícita | 01 / A |
+| E5 | FCF Apple = CFO menos compras de PP&E. FY2024 USD108.807 millones; FY2025 USD98.767 millones. Puente FY2025: CFO USD6.772 millones menor y capex USD3.268 millones mayor. Impuestos pagados USD43.369 millones frente a USD26.102 millones, sin atribuirles todo el cambio de CFO. | Cálculo y hechos de flujo | 02 / A |
+| E6 | Actualización de caja: FCF de nueve meses FY2026 terminado 27.jun.2026 USD110.197 millones frente a USD72.281 millones en nueve meses FY2025. Períodos comparables de nueve meses; no anualizar ni comparar como si fueran años completos. | Cálculo | 02, 03 / B |
+| E7 | Macro EE.UU.: PIB real interanual Q2 2026 2,19% vs Q2 2025 2,42%; IPC septiembre 2026 3,72% vs 3,02%; Fed efectiva mensual septiembre 3,75% vs 4,22%; Treasury 10 años 22.oct.2026 4,96% vs 22.oct.2025 3,97%; desempleo septiembre 4,2% vs 4,4%. Estados de FRED consultados al 23.oct.2026. | Hechos de niveles y cálculos interanuales | 02 / P, Q, R, S, T |
+| E8 | Opinión de skill 02: balance macro en contra por inflación/tasa larga y deterioro sectorial, con apoyo de tasa corta/empleo. Porter: rivalidad alta, entrantes baja a escala, proveedores alta, clientes media, sustitutos no evaluada. Estas intensidades no son hechos demostrados ni cubren todo el mundo. | Opinión del research | 02 / A, B, J |
+| E9 | Pares: margen operativo Apple 32,0%, Samsung 13,1%, Dell 7,2%, HP 5,7%; CAGR de ingresos a tres años 1,8%, 3,3%, 3,5% y -4,2%, respectivamente. Apple tiene el mayor margen y tercer CAGR de cuatro. Cierres distintos: Apple 27.sep.2025; Samsung 31.dic.2025; Dell 30.ene.2026; HP 31.oct.2025. Samsung incluye chips/pantallas, Dell servidores/financiamiento, HP impresión. Medianas no son un grupo puro ni períodos idénticos. | Cálculo con comparabilidad limitada | 02 / A, D, E, F, V, W, X, Y |
+| E10 | Ventajas: patrón de margen creciente con ventas observado; causalidad de escala no aislada del mix. Prima de marca comparable, retención/costo de migración, efecto de red medido y patente/licencia exclusiva con vigencia no quedaron acreditados en la revisión. Falta de evidencia no equivale a inexistencia. | Opinión y límites de evidencia | 02 / A, B |
+| E11 | Riesgos declarados por Apple: proveedores únicos/limitados, fabricación tercerizada en China, India y Taiwán entre otros, aranceles. El Q3 FY2026 ya reporta restricciones y mayores costos de NAND, DRAM y chips avanzados. Son riesgos y restricciones reportados, no una pérdida futura cuantificada. | Hecho: lo declara la empresa | 02 / A, B |
+| E12 | App Store/DMA: cambios en distribución, pagos y tarifas pueden afectar monetización. Multa EUR500 millones y apelación reportadas en Q3 FY2026. No se conoce aquí un desenlace posterior. iPhone representa 50,4% y ventas fuera de EE.UU. 63,5% de ingresos FY2025. | Hechos declarados y cálculos | 01, 02 / A, B |
+| E13 | Margen bruto Q3 FY2026 50,1%, con beneficio favorable aproximado de 2 puntos porcentuales por reembolsos arancelarios. No tratar todo ese margen como recurrente. FY2024 también incluye un cargo tributario extraordinario neto de unos USD10.200 millones por Irlanda; no atribuir todo crecimiento de utilidad a operación. | Hechos reportados; precaución de comparabilidad | 01, 02 / A, C |
+| E14 | IDC Q3 calendario 2026, preliminar: mercado de smartphones -22,0% interanual en despachos, Apple -4,0%; cuota Apple sube de 18,2% a 22,4%. Son unidades despachadas al canal, no ventas al consumidor ni ingresos. Mayor cuota no implica crecimiento absoluto. | Estimación externa observada | 02 / J |
+| E15 | Mercado observado 23.oct.2026: Apple P/U TTM 39,88x y EV/EBITDA TTM del proveedor 30,35x; medianas de pares sin Apple 19,69x (solo Dell/HP, n=2) y 7,88x (Samsung/Dell/HP, n=3), respectivamente. Denominadores TTM del proveedor no contrastados independientemente; mezcla de negocios distinta. No hay DCF, valor intrínseco, margen de seguridad ni precio objetivo. Un múltiplo superior no prueba sobrevaloración. | Instantánea del proveedor y cálculos; faltante de valoración | 01, 02 / U |
+| E16 | Backtest de cierres ajustados, 18.oct.2021 a 23.oct.2026: CAGR bursátil AAPL 19,5%, SPY 12,7%, XLK 19,3%; volatilidad anual 27,9%, 17,1%, 26,0%; Sharpe 0,63, 0,55, 0,66. Sortino docente 0,91, 0,76, 0,97. Son retornos históricos sin costos/impuestos, con tasa constante 4%. | Cálculo ejecutado | 03 / Q3 |
+| E17 | Caída máxima en esa ventana: AAPL -33,4% del 26.dic.2024 al 8.abr.2025; SPY -24,5%; XLK -33,6%. Describen máximos drawdowns propios dentro del backtest, no límites a futuras pérdidas. No se conoce tolerancia a pérdida de Chumi. | Cálculo ejecutado y faltante personal | 03 / Q3 |
+| E18 | Régimen AAPL: próxima sesión 18,7% anualizada, percentil 11,7; largo plazo 31,7%, persistencia 0,975, gamma 0,135 y t con 4,53 grados de libertad. IV cercana a un mes 28,0%. Comparación de opciones aproximada por horizontes/liquidez; no señala dirección ni evento específico. | Cálculo estimado y captura de opciones | 03 / Q3 |
+| E19 | Monte Carlo univariado GARCH-t: 10.000 caminos, horizonte 252 sesiones, semilla 42, deriva libre_de_riesgo, tasa 4% docente. Nivel inicial ajustado USD347,73; terminal P5 USD208,64, mediana USD353,76, P95 USD520,57. VaR terminal con signo -40,0%, CVaR -51,7%. Frecuencia de bajar 20% desde el inicio en algún día 38,8%; drawdown mediano por trayectoria -23,8%. Escenarios bajo supuestos, no predicciones, valoraciones ni probabilidades garantizadas. | Cálculo simulado bajo supuestos | 03 / Q3 |
+| E20 | Modelo diario de un factor: beta AAPL frente a SPY 1,20 y R² 54,7%; frente a XLK 0,89 y 58,7%. Ambos ETF incluyen Apple. R² es asociación, no causalidad ni partición de todo el riesgo; el residuo puede contener factores omitidos. Escenario conjunto distinto del univariado: mediana AAPL -30,5% cuando SPY termina cayendo más de 15%; frecuencia simulada de esa condición 9,5%. | Cálculo de regresión y simulación | 03 / Q3 |
+| E21 | Ventana arancelaria docente 19.feb.2025 a 8.abr.2025: AAPL -29,6%, SPY -18,8%; referencia beta x SPY -22,4%. Beta estimada con toda la muestra: referencia retrospectiva, no predicción anterior al evento. La diferencia no identifica la causa. Otras ventanas mostraron resultados distintos; 2008 no está incluido. | Cálculo histórico con ventana fija | 03 / Q3 |
+| E22 | Validación VaR diario: 138 excepciones en 2.513 días, 5,49% vs 5% nominal; Kupiec p=0,2655. No se rechaza cobertura dentro de muestra. No prueba independencia, severidad de cola ni validez fuera de muestra; modelo normal constante tiene 4,74% de excepciones, sin demostrar superioridad de GARCH. Repetición SPY con datos congelados dio resultados numéricos exactamente iguales; eso acredita reproducibilidad, no pronóstico. | Cálculo y límites metodológicos | 03 / Q3 |
+| E23 | Servicios aportó 51,7% del aumento de ingresos FY2025; Américas aportó USD11.308 millones, Europa USD9.704 millones y Greater China restó USD2.575 millones. Categorías de producto y regiones no son el mismo desglose. | Cálculo | 02 / A |
+| E24 | Fechas futuras: no hay en las fichas una fecha confirmada de próximos resultados, resolución DMA ni otro catalizador. Se pueden proponer señales a revisar en la próxima publicación o resolución; escribir fecha no disponible en el paquete, sin inventar calendarios. Horizonte personal, necesidad de liquidez y tolerancia a pérdidas de Chumi no fueron definidos para este ejercicio. | Dato faltante | 01-03 /  |
+
+## No encontrado
+
+- Valoración intrínseca y margen de seguridad; expectativas de crecimiento implícitas en precio no reconstruidas.
+- Retención/ARPU y base activa por producto, prima de precio homologada, efecto de red y recursos exclusivos con vigencia.
+- Margen futuro sin reembolsos y sensibilidad cuantificada a insumos, aranceles y cambios de App Store.
+- Múltiplos TTM verificados independientemente, comparables homogéneos, D&A puro de HP y FX actual KRW/USD.
+- Validación fuera de muestra e independencia de excepciones; calendario confirmado de catalizadores.
+- Horizonte de inversión, liquidez necesaria y tolerancia a pérdida del usuario.
+
+## Fuentes rastreables
+
+- A: [Apple 10-K FY2025](https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm). Items 1, 1A, 7 y 8; estados pp.29,31,33; notas 4,7,13
+- B: [Apple 10-Q Q3 FY2026](https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm). Flujos p.6; MD&A pp.14-16; Part II Items 1 y 1A pp.20-21
+- C: [Apple comunicado Q3 FY2026](https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/). 
+- D: [Dell 10-K FY2026](https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000008/dell-20260130.htm). Estados pp.69-72; segmentos Note 18; deuda incluye Dell Financial Services
+- E: [HP 10-K FY2025](https://www.sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm). Estados pp.50,52-53; Notes 7 y 8 pp.80-84
+- F: [Samsung resultados FY2025](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_soi.pdf). Estado consolidado p.9; importes KRW millones
+- J: [IDC despachos Q3 calendario 2026](https://www.idc.com/resource-center/press-releases/smartphone-shipments-decline-3q26/). Tabla de proveedores Q3 2026, preliminar; excluye equipos reacondicionados
+- P: [FRED PIB real GDPC1](https://fred.stlouisfed.org/data/GDPC1). 
+- Q: [FRED IPC CPIAUCSL](https://fred.stlouisfed.org/data/CPIAUCSL). 
+- R: [FRED tasa efectiva FEDFUNDS](https://fred.stlouisfed.org/data/FEDFUNDS). 
+- S: [FRED Treasury DGS10](https://fred.stlouisfed.org/data/DGS10). 
+- T: [FRED desempleo UNRATE](https://fred.stlouisfed.org/data/UNRATE). 
+- U: [Yahoo Finance, instantáneas de mercado](https://finance.yahoo.com/quote/AAPL/). get_info() de AAPL, 005930.KS, DELL y HPQ; múltiplos TTM del proveedor, no recalculados con FY2025
+- V: [Samsung resultados FY2022](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2022_con_quarter04_soi.pdf). p.8, ingresos consolidados KRW millones
+- W: [Dell resultados FY2024, base FY2023](https://investors.delltechnologies.com/news-events/press-releases/detail/165/dell-technologies-delivers-fourth-quarter-and-full-year-fiscal-2024-financial-results). Ingresos FY2023 USD102301 millones; cierre 2023-02-03
+- X: [HP resultados FY2023, base FY2022 corregida](https://investor.hp.com/news-events/news/news-details/2023/HP-Inc.-Reports-Fiscal-2023-Full-Year-and-Fourth-Quarter-Results/default.aspx). Ingresos FY2022 USD62910 millones; cierre 2022-10-31
+- Y: [Apple 10-K FY2024, base FY2022](https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm). Estado de resultados p.29; ingresos FY2022 USD394328 millones, cierre 2022-09-24
+- Q3: [Resultados ejecutados de Skill03, Yahoo Finance ajustado, corte 23.oct.2026](https://drive.google.com/drive/folders/1U0OXVF-V7IOqxLPH1WgJqQwKiUD2xYCE). 
+
+Los rótulos de estado antiguos de la ficha 01 corresponden a su fecha de creación; las tres etapas anteriores se completaron. FY2025 es anual, Q3 FY2026 y nueve meses son períodos distintos; Q3 IDC es trimestre calendario. No tratar múltiplos como valor intrínseco ni simulación como objetivo de precio.

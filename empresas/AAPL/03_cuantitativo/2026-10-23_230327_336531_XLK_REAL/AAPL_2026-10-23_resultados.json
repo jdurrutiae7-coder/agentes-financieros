@@ -1,0 +1,216 @@
+{
+  "ticker": "AAPL",
+  "benchmark": "XLK",
+  "modo_demo": false,
+  "fecha_corrida": "2026-10-23",
+  "datos_modelo": [
+    "2016-10-25",
+    "2026-10-23"
+  ],
+  "parametros": {
+    "anos_modelo": 10,
+    "anos_backtest": 5,
+    "horizonte_dias": 252,
+    "simulaciones": 10000,
+    "semilla": 42,
+    "deriva": "libre_de_riesgo",
+    "tasa_libre_riesgo": 0.04
+  },
+  "backtest": {
+    "AAPL": {
+      "retorno_total": 1.4326879032648043,
+      "cagr": 0.1947543250255117,
+      "volatilidad_anual": 0.2789929015615805,
+      "sharpe": 0.6324538339826491,
+      "sortino": 0.9102893571819162,
+      "max_drawdown": -0.3336051175256479,
+      "max_drawdown_inicio": "2024-12-26",
+      "max_drawdown_fondo": "2025-04-08"
+    },
+    "XLK": {
+      "retorno_total": 1.4184447441725387,
+      "cagr": 0.19335088893451857,
+      "volatilidad_anual": 0.2595889302837346,
+      "sharpe": 0.6557268908446624,
+      "sortino": 0.9745152341718225,
+      "max_drawdown": -0.3355907607859878,
+      "max_drawdown_inicio": "2021-12-27",
+      "max_drawdown_fondo": "2022-10-12"
+    }
+  },
+  "regimen": {
+    "vol_hoy": 0.18652462148852034,
+    "percentil_hoy": 11.738957421408674,
+    "vol_largo_plazo": 0.31732213011906124,
+    "vol_historica_simple": 0.2911134123795372,
+    "persistencia": 0.9750663560252547,
+    "asimetria_gamma": 0.13547186289720858,
+    "grados_libertad_t": 4.5251637050334415,
+    "vol_modelo_1m": 0.22459139573695217,
+    "vol_modelo_1a": 0.33359596451625095,
+    "vol_implicita": {
+      "1_mes": {
+        "vencimiento": "2026-11-20",
+        "dias": 28,
+        "iv": 0.27973132385253907
+      },
+      "1_ano": {
+        "vencimiento": "2027-09-17",
+        "dias": 329,
+        "iv": 0.27849155963897704
+      }
+    }
+  },
+  "montecarlo": {
+    "garch_t": {
+      "p5": 208.63906852619743,
+      "p25": 293.3551476385559,
+      "mediana": 353.7598196558058,
+      "p75": 415.0342621886325,
+      "p95": 520.5647721123019,
+      "prob_perdida_al_final": 0.4743,
+      "var_95": -0.3999969460950536,
+      "cvar_95": -0.5174128380223671,
+      "prob_caer_20pct_en_algun_momento": 0.388,
+      "prob_subir_20pct_en_algun_momento": 0.44,
+      "drawdown_mediano_en_el_ano": -0.237539909103669
+    },
+    "volatilidad_constante": {
+      "p5": 217.25398697123603,
+      "p25": 284.6030517931016,
+      "mediana": 345.17489303842876,
+      "p75": 419.29122900988307,
+      "p95": 561.8199906014561,
+      "prob_perdida_al_final": 0.5103,
+      "var_95": -0.3752222123278916,
+      "cvar_95": -0.44535027547076206,
+      "prob_caer_20pct_en_algun_momento": 0.4319,
+      "prob_subir_20pct_en_algun_momento": 0.4983,
+      "drawdown_mediano_en_el_ano": -0.27072351381121496
+    }
+  },
+  "factor": {
+    "beta": 0.8877375555744168,
+    "alfa_diario": 0.00026411417120466327,
+    "r2": 0.5868788050483462,
+    "vol_idiosincratica_anual": 0.1870744713553289
+  },
+  "condicional": [
+    {
+      "escenario": "Benchmark cae más de 15%",
+      "frecuencia": 0.2003,
+      "mediana": -0.27846886248995834,
+      "p5": -0.6328744892679885,
+      "p95": 0.03719052954907474
+    },
+    {
+      "escenario": "Benchmark cae 0–15%",
+      "frecuencia": 0.2209,
+      "mediana": -0.0736122107644871,
+      "p5": -0.33245124421164785,
+      "p95": 0.2497835270330147
+    },
+    {
+      "escenario": "Benchmark sube 0–15%",
+      "frecuencia": 0.2558,
+      "mediana": 0.04859098079825859,
+      "p5": -0.22551218509642035,
+      "p95": 0.42290618404287617
+    },
+    {
+      "escenario": "Benchmark sube más de 15%",
+      "frecuencia": 0.323,
+      "mediana": 0.25395924383546076,
+      "p5": -0.10434242135973518,
+      "p95": 0.8120649120818627
+    }
+  ],
+  "crisis": [
+    {
+      "crisis": "Venta masiva Q4 2018",
+      "desde": "2018-09-20",
+      "hasta": "2018-12-24",
+      "benchmark": -0.22743050821023914,
+      "accion": -0.33035332010285545,
+      "implicito_por_beta": -0.201898603421605
+    },
+    {
+      "crisis": "COVID 2020",
+      "desde": "2020-02-19",
+      "hasta": "2020-03-23",
+      "benchmark": -0.31153225162559683,
+      "accion": -0.30668702521973346,
+      "implicito_por_beta": -0.27655887954070146
+    },
+    {
+      "crisis": "Alza de tasas 2022",
+      "desde": "2022-01-03",
+      "hasta": "2022-10-12",
+      "benchmark": -0.3313131435908102,
+      "accion": -0.2367867065016166,
+      "implicito_por_beta": -0.29411912022098163
+    },
+    {
+      "crisis": "Shock arancelario 2025",
+      "desde": "2025-02-19",
+      "hasta": "2025-04-08",
+      "benchmark": -0.2565629828108673,
+      "accion": -0.29587120056261884,
+      "implicito_por_beta": -0.22776059521140046
+    }
+  ],
+  "validacion_var": {
+    "dias": 2513,
+    "excepciones": 138,
+    "tasa": 0.05491444488658973,
+    "esperada": 0.050000000000000044,
+    "p_valor_kupiec": 0.26548214008332843,
+    "tasa_modelo_vol_constante": 0.04735376044568245
+  },
+  "graficos": [
+    "AAPL_2026-10-23_1_crecimiento.png",
+    "AAPL_2026-10-23_2_drawdown.png",
+    "AAPL_2026-10-23_3_regimen_volatilidad.png",
+    "AAPL_2026-10-23_4_montecarlo.png",
+    "AAPL_2026-10-23_5_escenarios_condicionales.png",
+    "AAPL_2026-10-23_6_crisis.png"
+  ],
+  "auditoria": {
+    "modo": "REAL",
+    "fuente": "Yahoo Finance, cierre ajustado por dividendos y splits",
+    "creado_utc": "2026-10-24T02:03:37.403044+00:00",
+    "repetida_desde": null,
+    "python": "3.12.14",
+    "versiones": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "matplotlib": "3.11.2",
+      "scipy": "1.18.1",
+      "arch": "8.0.0",
+      "statsmodels": "0.15.0",
+      "yfinance": "1.7.0"
+    },
+    "motor_sha256": "86e4aa190c6c77b81b8045778ddb0dceca16208abe7fb1ba3120baeda765d064",
+    "ejecutor_sha256": "5657b8e8665a85a2468565201e711f128a7c73a8825d4aad05d81de370e44050",
+    "config_sha256": "73c0482699f8b98ddf6a696f35594f4abe9d1cc4f63e1f28b4d49fdd21252c79",
+    "precios_archivo": "AAPL_2026-10-23_precios.csv",
+    "precios_sha256": "5904560e6003119f5a9282f838911a5934a00a1e9e92272390bc309461f96f40",
+    "opciones_sha256": "61ffec61bc2f96a126d6cbec02592b585db12797b4c43f935f58006587d27b1e",
+    "monedas_verificadas": {
+      "AAPL": "USD",
+      "XLK": "USD"
+    },
+    "backtest_efectivo": {
+      "desde": "2021-10-18",
+      "hasta": "2026-10-23",
+      "observaciones": 1260
+    },
+    "avisos": [
+      "La tasa libre de riesgo es un supuesto sin fecha vigente verificada.",
+      "The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.",
+      "The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.",
+      "The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.",
+      "The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details."
+    ]
+  }
+}

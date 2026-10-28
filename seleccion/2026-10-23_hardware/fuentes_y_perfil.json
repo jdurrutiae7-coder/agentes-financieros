@@ -1,0 +1,101 @@
+{
+  "fecha_local": "2026-10-23",
+  "zona_horaria": "America/Santiago",
+  "perfil": {
+    "industria": "Tecnología",
+    "segmento": "Hardware",
+    "tipo_empresa": "Gigante consolidada",
+    "motivo_interes": "No indicado",
+    "preferencia_dividendos_crecimiento": "No consultada",
+    "empresa_elegida": null
+  },
+  "capitalizaciones": [
+    {
+      "ticker_consultado": "AAPL",
+      "consultado_utc": "2026-10-24T00:48:32.369157+00:00",
+      "fuente": "https://finance.yahoo.com/quote/AAPL/",
+      "symbol": "AAPL",
+      "longName": "Apple Inc.",
+      "currency": "USD",
+      "marketCap": 5074761285632,
+      "regularMarketPrice": 347.725,
+      "regularMarketTime": 1792785601,
+      "exchange": "NMS",
+      "quoteType": "EQUITY",
+      "industry": "Consumer Electronics",
+      "sector": "Technology",
+      "fecha_precio_santiago": "2026-10-23T17:00:01-03:00"
+    },
+    {
+      "ticker_consultado": "DELL",
+      "consultado_utc": "2026-10-24T00:48:36.402118+00:00",
+      "fuente": "https://finance.yahoo.com/quote/DELL/",
+      "symbol": "DELL",
+      "longName": "Dell Technologies Inc.",
+      "currency": "USD",
+      "marketCap": 290210381824,
+      "regularMarketPrice": 456.44,
+      "regularMarketTime": 1792785769,
+      "exchange": "NYQ",
+      "quoteType": "EQUITY",
+      "industry": "Computer Hardware",
+      "sector": "Technology",
+      "fecha_precio_santiago": "2026-10-23T17:02:49-03:00"
+    },
+    {
+      "ticker_consultado": "HPQ",
+      "consultado_utc": "2026-10-24T00:48:38.443856+00:00",
+      "fuente": "https://finance.yahoo.com/quote/HPQ/",
+      "symbol": "HPQ",
+      "longName": "HP Inc.",
+      "currency": "USD",
+      "marketCap": 30336247808,
+      "regularMarketPrice": 33.64,
+      "regularMarketTime": 1792785603,
+      "exchange": "NYQ",
+      "quoteType": "EQUITY",
+      "industry": "Computer Hardware",
+      "sector": "Technology",
+      "fecha_precio_santiago": "2026-10-23T17:00:03-03:00"
+    },
+    {
+      "ticker_consultado": "HPE",
+      "consultado_utc": "2026-10-24T00:48:40.295082+00:00",
+      "fuente": "https://finance.yahoo.com/quote/HPE/",
+      "symbol": "HPE",
+      "longName": "Hewlett Packard Enterprise Company",
+      "currency": "USD",
+      "marketCap": 75253981184,
+      "regularMarketPrice": 56.69,
+      "regularMarketTime": 1792785784,
+      "exchange": "NYQ",
+      "quoteType": "EQUITY",
+      "industry": "Communication Equipment",
+      "sector": "Technology",
+      "fecha_precio_santiago": "2026-10-23T17:03:04-03:00"
+    },
+    {
+      "ticker_consultado": "CSCO",
+      "consultado_utc": "2026-10-24T00:48:42.152909+00:00",
+      "fuente": "https://finance.yahoo.com/quote/CSCO/",
+      "symbol": "CSCO",
+      "longName": "Cisco Systems, Inc.",
+      "currency": "USD",
+      "marketCap": 419885514752,
+      "regularMarketPrice": 106.5,
+      "regularMarketTime": 1792785601,
+      "exchange": "NMS",
+      "quoteType": "EQUITY",
+      "industry": "Communication Equipment",
+      "sector": "Technology",
+      "fecha_precio_santiago": "2026-10-23T17:00:01-03:00"
+    }
+  ],
+  "fuentes_negocio": {
+    "AAPL": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+    "DELL": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000008/dell-20260130.htm",
+    "HPQ": "https://www.sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm",
+    "HPE": "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/governance/annual-report-on-form-10K-2025.pdf",
+    "CSCO": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm"
+  }
+}

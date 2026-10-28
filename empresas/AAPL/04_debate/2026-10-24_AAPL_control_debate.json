@@ -1,0 +1,115 @@
+{
+  "01_apertura_bajista": {
+    "palabras_con_titulo_y_tabla": 219,
+    "evidencias_citadas": [
+      "E1",
+      "E2",
+      "E6",
+      "E11",
+      "E12",
+      "E13",
+      "E15",
+      "E23",
+      "E24"
+    ],
+    "sha256": "ab1529cccb7179b4413d578eff130002bdd14c7a303c992d6a427370a95aaf63"
+  },
+  "02_apertura_alcista": {
+    "palabras_con_titulo_y_tabla": 218,
+    "evidencias_citadas": [
+      "E1",
+      "E3",
+      "E5",
+      "E6",
+      "E12",
+      "E15",
+      "E24"
+    ],
+    "sha256": "dca78d8880dd6a8ce5cc7af1429dcffa9f94921f7b8e7fca775984d5859ca16b"
+  },
+  "03_revision_neutral": {
+    "palabras_con_titulo_y_tabla": 216,
+    "evidencias_citadas": [
+      "E1",
+      "E2",
+      "E3",
+      "E5",
+      "E6",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E23"
+    ],
+    "sha256": "79cd7833c98844bb9dfaee8f32e9b2e43c4e523d5bbdde5d0a686c526b17a8c1"
+  },
+  "04_replica_bajista": {
+    "palabras_con_titulo_y_tabla": 194,
+    "evidencias_citadas": [
+      "E1",
+      "E5",
+      "E6",
+      "E11",
+      "E12",
+      "E13",
+      "E15",
+      "E23",
+      "E24"
+    ],
+    "sha256": "07f9341dad4eb90d4c7d7304b9d170fb7077a7f42b578aa21764f30782e70089"
+  },
+  "05_replica_alcista": {
+    "palabras_con_titulo_y_tabla": 199,
+    "evidencias_citadas": [
+      "E1",
+      "E2",
+      "E3",
+      "E6",
+      "E12",
+      "E13",
+      "E15",
+      "E23",
+      "E24"
+    ],
+    "sha256": "0c7152112b194120be6751234f3fec44ef873c98b8d6d1906018e7cfa1c1bab8"
+  },
+  "06_cierre_neutral": {
+    "palabras_con_titulo_y_tabla": 245,
+    "evidencias_citadas": [
+      "E1",
+      "E2",
+      "E3",
+      "E5",
+      "E6",
+      "E12",
+      "E13",
+      "E15",
+      "E23",
+      "E24"
+    ],
+    "sha256": "6c2efce957d2a798087a89be2490722ed7a317bda8845cfba29560ad1edaab19"
+  },
+  "pdf": {
+    "paginas": 5,
+    "bytes": 71321,
+    "texto_extraido_caracteres": 12627,
+    "inspeccion_visual": "Cinco páginas renderizadas con Poppler y revisadas: texto, tablas, márgenes y pies sin cortes ni superposiciones."
+  },
+  "metodo": {
+    "aperturas_contextos_separados": true,
+    "datos_nuevos": false,
+    "decision_personal_completada": false,
+    "corte": "2026-10-23",
+    "agentes": [
+      "/root/bajista_aapl",
+      "/root/alcista_aapl",
+      "/root/neutral_aapl"
+    ],
+    "aperturas_originales_sin_cambios": {
+      "2026-10-24_AAPL_01_apertura_bajista.md": "756c86ef5e6c7d7ace72efe630c3f6c8a35a465d6a30950a63c46a92599a3833",
+      "2026-10-24_AAPL_02_apertura_alcista.md": "8eb6fbd45a3966521377532abef1179163908b5846eb291a466c6f97a2511b11"
+    }
+  }
+}
