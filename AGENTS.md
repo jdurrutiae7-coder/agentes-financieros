@@ -20,10 +20,10 @@ Mantener portada general, índice de empresas y portada de la empresa cuando cam
 
 Conservar versiones históricas y crear otro archivo o corrida para datos nuevos. Las plantillas de `docs/plantillas/` se usan solo si falta la nota de destino. Crear una empresa no inicia investigación ni completa sus estados. Las notas y la configuración existentes se conservan. No reescribir los manifiestos originales después de cambiar código.
 
-Un chat por empresa y este chat para mantenimiento es la convención propuesta. La continuidad depende de los archivos del proyecto. Crear chats o conectar GitHub requiere la instrucción correspondiente de Chumi; una tarea de organización local no publica ni sincroniza archivos.
+Un chat por empresa y este chat para mantenimiento es la organización acordada con Chumi. La continuidad depende de los archivos del proyecto. Crear chats nuevos requiere su instrucción; una tarea de organización local no publica ni sincroniza archivos.
 
 ## Modelo
 
 Antes de interpretar por primera vez, leer `docs/revision.md`. La tasa inicial 4% proviene del profesor y no está validada como vigente. La validación de VaR es dentro de muestra. R² mide asociación frente al comparador elegido y no causalidad ni toda la contribución del mercado. Conservar datos, configuración, opciones, versiones y huellas para reproducir.
 
-No escribir credenciales. GitHub puede usarse como repositorio cuando Chumi indique la cuenta y el destino; esta base solo prepara un repositorio local. Drive puede guardar material y entregables cuando Chumi lo solicite; no existe sincronización automática configurada.
+No escribir credenciales. El repositorio privado es `jdurrutiae7-coder/agentes-financieros`, conectado como `origin`; la primera publicación fue el 28.oct.2026. La rama principal es `main`. Revisar estado y destino antes de enviar cambios y verificar cada subida. Las ediciones locales no se sincronizan solas. Drive puede guardar material y entregables cuando Chumi lo solicite; tampoco tiene sincronización automática configurada.
