@@ -2,7 +2,7 @@
 
 Herramienta de investigación de empresas que combina un motor cuantitativo en Python con un flujo de trabajo asistido por IA. Organiza fuentes, calcula métricas de riesgo y conserva los datos y supuestos necesarios para revisar cómo se llegó a cada resultado.
 
-Proyecto personal de **José Domingo Urrutia**, desarrollado con asistencia de IA a partir de material del Club de Finanzas e Inversiones. El aporte está en adaptar esa base a una herramienta reutilizable por empresa, agregar controles y documentar sus límites. Es un prototipo educativo funcional, con un caso histórico de Apple disponible para revisión.
+Proyecto personal de **José Domingo Urrutia**, desarrollado con asistencia de IA para integrar investigación financiera, análisis de riesgo y trazabilidad en una herramienta reutilizable por empresa. El trabajo incluye ejecución parametrizable, validación de datos, pruebas y documentación técnica. Es un prototipo funcional, con un caso histórico de Apple disponible para revisión.
 
 **Revisar en pocos minutos:** [caso Apple](empresas/AAPL/Inicio.md) · [ejecutor Python](analisis.py) · [pruebas](tests/test_analisis.py) · [informe cuantitativo PDF](empresas/AAPL/03_cuantitativo/2026-10-23_AAPL_lectura_03.pdf)
 
@@ -26,11 +26,11 @@ Este proyecto reúne la investigación por empresa y conecta tres piezas: **evid
 
 La investigación y el debate se realizan desde Codex con revisión de fuentes y supervisión humana. **La CLI automatiza el bloque cuantitativo.** El repositorio no implementa llamadas directas a APIs de LLMs ni un pipeline automático de extracción de documentos financieros.
 
-## Mi contribución sobre el material del curso
+## Desarrollo y decisiones técnicas
 
-La metodología de investigación y el modelo cuantitativo parten del profesor. Los [seis originales](material_curso/) se conservan para distinguir esa base de la adaptación. Las decisiones y correcciones se detallan en la [revisión técnica](docs/revision.md).
+El trabajo de desarrollo se concentra en convertir el flujo de análisis en una herramienta reutilizable, conservar la evidencia de cada ejecución y agregar controles para revisar los resultados.
 
-| Aporte de la adaptación | Evidencia para revisarlo |
+| Trabajo realizado en el proyecto | Evidencia para revisarlo |
 | --- | --- |
 | Separación entre motor, ejecución y parámetros por empresa | [`src/modelo_curso.py`](src/modelo_curso.py), [`analisis.py`](analisis.py) y [`config/ejemplo.json`](config/ejemplo.json). |
 | Creación de expedientes sin sobrescribir configuración ni notas existentes | Función `create()` y pruebas de conservación y separación de empresas en [`tests/test_analisis.py`](tests/test_analisis.py). |
@@ -40,6 +40,8 @@ La metodología de investigación y el modelo cuantitativo parten del profesor. 
 | Adaptación del flujo de IA a archivos persistentes | [Skills](.agents/skills/), fichas por etapa y [paquete de evidencia del debate](empresas/AAPL/04_debate/2026-10-24_AAPL_paquete_evidencia.md). |
 
 El desarrollo se realizó con asistencia de IA. La revisión del código, los controles y las limitaciones documentadas forman parte del trabajo presentado.
+
+**Referencias metodológicas:** material del Club de Finanzas e Inversiones, conservado en [`material_curso/`](material_curso/). La [revisión técnica](docs/revision.md) distingue la base de referencia de las adaptaciones y correcciones implementadas.
 
 ## Cómo se conectan las piezas
 
@@ -129,7 +131,7 @@ Las corridas DEMO, los entornos y los PNG cuantitativos regenerables se excluyen
 
 ## Alcance y próximos pasos
 
-- **Modelo financiero:** estudia retornos y riesgo. No calcula valor intrínseco ni precios objetivo. La tasa inicial de 4% anual es un supuesto docente sin validación como tasa vigente; las simulaciones dependen de sus supuestos.
+- **Modelo financiero:** estudia retornos y riesgo. No calcula valor intrínseco ni precios objetivo. La tasa inicial de 4% anual es un supuesto del modelo sin validación como tasa vigente; las simulaciones dependen de sus supuestos.
 - **Validación:** el test de VaR está dentro de muestra. R² mide asociación con el comparador, no causalidad. No se ha acreditado capacidad predictiva fuera de muestra.
 - **IA:** los roles del debate comparten evidencia y modelo; no representan verificaciones externas independientes. Las fuentes y las conclusiones requieren revisión humana.
 - **Estado de ingeniería:** herramienta local por terminal. No incorpora SQL/PostgreSQL, backend FastAPI, frontend React, Docker, CI/CD ni despliegue cloud.
