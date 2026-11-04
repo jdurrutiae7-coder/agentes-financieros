@@ -1,4 +1,4 @@
-# Agente Financiero | Python e IA aplicada al análisis de inversiones
+# Equity Research Lab | Investigación financiera y debate con IA
 
 Herramienta de investigación de empresas que combina un motor cuantitativo en Python con un flujo de trabajo asistido por IA. Organiza fuentes, calcula métricas de riesgo y conserva los datos y supuestos necesarios para revisar cómo se llegó a cada resultado.
 
@@ -11,6 +11,17 @@ Proyecto personal de **José Domingo Urrutia**, desarrollado con asistencia de I
 Una investigación financiera puede terminar repartida entre notebooks, búsquedas, planillas e informes. Eso dificulta saber qué fuente respalda una conclusión, con qué parámetros se calculó un indicador y cómo repetirlo después.
 
 Este proyecto reúne la investigación por empresa y conecta tres piezas: **evidencia fechada, cálculo reproducible y contraste de argumentos**. Está orientado a apoyar el trabajo del analista. No se ha medido un ahorro de tiempo ni un impacto comercial.
+
+## Un proceso de investigación en cuatro etapas
+
+| Etapa | Pregunta financiera y trabajo realizado |
+| --- | --- |
+| 01 Idea de inversión | Seleccionar una empresa y definir las preguntas que justifican estudiarla. |
+| 02 Research fundamental y competitivo | Examinar el negocio, su desempeño financiero, posición competitiva, entorno y riesgos, con fuentes fechadas. |
+| 03 Análisis cuantitativo de riesgo | Comparar la acción con un benchmark y estudiar retornos, volatilidad, drawdowns y escenarios mediante simulación Monte Carlo. |
+| 04 Debate de la tesis | Tres agentes con roles alcista, bajista y neutral contrastan argumentos sobre la misma evidencia; el rol neutral revisa su respaldo, los desacuerdos y los faltantes. |
+
+El debate conecta los fundamentos del negocio con los resultados cuantitativos y deja preguntas para el analista. Los agentes comparten fuentes y modelo; sus perspectivas no constituyen validaciones externas independientes ni una decisión de inversión automática.
 
 ## Qué funciona hoy
 
