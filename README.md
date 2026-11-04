@@ -1,146 +1,140 @@
-# Equity research con IA y Python
+# Agente Financiero | Python e IA aplicada al análisis de inversiones
 
-Proyecto de José Domingo Urrutia para investigar empresas con un flujo de cuatro etapas: idea, research competitivo, análisis cuantitativo de riesgo y debate de argumentos. Usa Python, VS Code y skills de Codex, con una carpeta por empresa y evidencia fechada.
+Herramienta de investigación de empresas que combina un motor cuantitativo en Python con un flujo de trabajo asistido por IA. Organiza fuentes, calcula métricas de riesgo y conserva los datos y supuestos necesarios para revisar cómo se llegó a cada resultado.
 
-El punto de partida es el material del curso del Club de Finanzas e Inversiones. Las adaptaciones del ejecutor, correcciones del modelo, estructura por empresa y controles de reproducibilidad se describen en [la revisión técnica](docs/revision.md). Los originales del profesor se conservan en `material_curso/`; el proyecto no atribuye su metodología original al autor de esta adaptación.
+Proyecto personal de **José Domingo Urrutia**, desarrollado con asistencia de IA a partir de material del Club de Finanzas e Inversiones. El aporte está en adaptar esa base a una herramienta reutilizable por empresa, agregar controles y documentar sus límites. Es un prototipo educativo funcional, con un caso histórico de Apple disponible para revisión.
 
-## Recorrido rápido
+**Revisar en pocos minutos:** [caso Apple](empresas/AAPL/Inicio.md) · [ejecutor Python](analisis.py) · [pruebas](tests/test_analisis.py) · [informe cuantitativo PDF](empresas/AAPL/03_cuantitativo/2026-10-23_AAPL_lectura_03.pdf)
 
-1. [Expediente de Apple](empresas/AAPL/Inicio.md): caso completo, fichas y pendientes, con evidencia al 23.oct.2026.
-2. [Motor Python](src/modelo_curso.py) y [ejecutor](analisis.py): fórmulas compartidas y parámetros por empresa.
-3. [Corrida principal de Apple frente a SPY](empresas/AAPL/03_cuantitativo/2026-10-23_230246_610362_SPY_REAL/resumen.md) y [manifiesto](empresas/AAPL/03_cuantitativo/2026-10-23_230246_610362_SPY_REAL/manifest.json): datos, supuestos, versiones y huellas de esa ejecución.
-4. [Pruebas](tests/test_analisis.py): controles estadísticos puntuales, protección de configuraciones y separación de expedientes.
-5. [Guía para presentar el proyecto](docs/recorrido.md): alcance, aportes, límites y una demostración reproducible.
+## El problema que aborda
 
-El motor estudia retornos y riesgo bajo supuestos. No estima valor intrínseco ni produce señales de compra o venta. La investigación y el debate necesitan ejecución desde Codex y revisión de las fuentes; no son tareas automatizadas por el script Python.
+Una investigación financiera puede terminar repartida entre notebooks, búsquedas, planillas e informes. Eso dificulta saber qué fuente respalda una conclusión, con qué parámetros se calculó un indicador y cómo repetirlo después.
 
-Repositorio privado: [jdurrutiae7-coder/agentes-financieros](https://github.com/jdurrutiae7-coder/agentes-financieros). La carpeta de trabajo está registrada en Codex como **Agente Financiero**. El código y las empresas comparten el mismo repositorio; cada caso conserva sus datos y corte de evidencia.
+Este proyecto reúne la investigación por empresa y conecta tres piezas: **evidencia fechada, cálculo reproducible y contraste de argumentos**. Está orientado a apoyar el trabajo del analista. No se ha medido un ahorro de tiempo ni un impacto comercial.
 
-**Entrada del proyecto:** [Inicio.md](Inicio.md). Organización local del 28.oct.2026: portadas, bitácoras, [índice de empresas](empresas/README.md), [glosario](Glosario.md) y [procedimiento de continuidad](docs/organizacion.md). Esta fecha no actualiza la evidencia de Apple.
+## Qué funciona hoy
 
-## Qué está preparado
+| Capacidad | Implementación |
+| --- | --- |
+| Análisis de retornos y riesgo | Comparación de una acción con un benchmark: retorno, volatilidad, Sharpe, Sortino y drawdown. |
+| Modelación de escenarios | Volatilidad GJR-GARCH con innovaciones t, simulación Monte Carlo, VaR/CVaR, beta y escenarios condicionales. |
+| Integración de datos de mercado | Precios ajustados y captura de volatilidad implícita mediante `yfinance`; validación de precios, cobertura y moneda. |
+| Ejecución por empresa | CLI con configuración JSON y parámetros por argumento, sin copiar las fórmulas para cada ticker. |
+| Trazabilidad | Cada corrida guarda precios, opciones, configuración, resultados, versiones y huellas SHA-256 en una carpeta nueva. |
+| Research asistido por IA | Cuatro skills con instrucciones, fichas de traspaso y fuentes; el debate contrasta perspectivas alcista, bajista y neutral. |
+| Reporting | Resumen Markdown, ficha, resultados JSON y gráficos generados por Python; informes de lectura revisados por etapa. |
 
-- Los seis archivos originales en `material_curso/`, con huellas SHA-256 para comprobar que no cambiaron.
-- Cuatro skills de Codex en `.agents/skills/`: idea, research, cuantitativo y debate.
-- El motor Python extraído del notebook, con las adaptaciones descritas en `docs/revision.md`.
-- Un ejecutor para elegir empresa y comparador sin editar fórmulas.
-- Un notebook para VS Code que usa el mismo motor.
-- Resultados nuevos por cada corrida: resumen, ficha, precios, gráficos, configuración, opciones y registro de versiones.
+La investigación y el debate se realizan desde Codex con revisión de fuentes y supervisión humana. **La CLI automatiza el bloque cuantitativo.** El repositorio no implementa llamadas directas a APIs de LLMs ni un pipeline automático de extracción de documentos financieros.
 
-Las primeras dos skills y el debate producen informes mediante Codex. El script Python ejecuta la etapa cuantitativa; no automatiza por sí solo la investigación web ni el debate.
+## Mi contribución sobre el material del curso
 
-## Avance de Apple al 24 de octubre de 2026 (evidencia al 23 de octubre)
+La metodología de investigación y el modelo cuantitativo parten del profesor. Los [seis originales](material_curso/) se conservan para distinguir esa base de la adaptación. Las decisiones y correcciones se detallan en la [revisión técnica](docs/revision.md).
 
-| Etapa | Estado | Entregable |
-|---|---|---|
-| 01 Idea | Completada | `empresas/AAPL/01_idea/2026-10-23_AAPL_brief.md` y ficha 01 |
-| 02 Research | Completada con faltantes declarados | `empresas/AAPL/02_research/2026-10-23_AAPL_research.pdf`, versión Markdown, ficha 02 y fuentes/cálculos JSON |
-| 03 Cuantitativo | Completada con datos reales y repetición numérica exacta de la corrida SPY | SPY principal y XLK como sensibilidad; `empresas/AAPL/03_cuantitativo/2026-10-23_AAPL_lectura_03.pdf`, ficha 03 y paquete reproducible ZIP |
-| 04 Debate | Debate completado; decisión personal de Chumi pendiente | `empresas/AAPL/04_debate/2026-10-24_AAPL_debate.pdf`, rondas, paquete E#, mapa, hoja de decisión y trazabilidad |
+| Aporte de la adaptación | Evidencia para revisarlo |
+| --- | --- |
+| Separación entre motor, ejecución y parámetros por empresa | [`src/modelo_curso.py`](src/modelo_curso.py), [`analisis.py`](analisis.py) y [`config/ejemplo.json`](config/ejemplo.json). |
+| Creación de expedientes sin sobrescribir configuración ni notas existentes | Función `create()` y pruebas de conservación y separación de empresas en [`tests/test_analisis.py`](tests/test_analisis.py). |
+| Conservación de insumos para repetir cálculos sin descargar datos nuevos | Opción `--repetir`, captura de opciones y [manifiesto de Apple](empresas/AAPL/03_cuantitativo/2026-10-23_230246_610362_SPY_REAL/manifest.json). |
+| Controles antes de aceptar resultados | Rechazo de precios inválidos, monedas incompatibles, historia insuficiente y ajustes GARCH sin convergencia o sin nivel estacionario de largo plazo. |
+| Correcciones estadísticas puntuales | Drawdown que incluye el capital inicial, exclusión de crisis incompletas y cálculo de Kupiec con cero excepciones, con pruebas asociadas. |
+| Adaptación del flujo de IA a archivos persistentes | [Skills](.agents/skills/), fichas por etapa y [paquete de evidencia del debate](empresas/AAPL/04_debate/2026-10-24_AAPL_paquete_evidencia.md). |
 
-Los entregables 01, 02, 03 y 04 están respaldados en la carpeta de Apple en Drive. Son cargas realizadas por etapa, sin sincronización automática. El ZIP original conserva la base inicial; los análisis posteriores están en las carpetas del proyecto. La etapa 03 tiene un ZIP propio con código, precios, opciones, versiones, manifiestos, resultados y gráficos de las corridas reales, sin incluir `.venv`. El entorno `.venv` ya está preparado en este equipo; en otro computador se debe recrear.
+El desarrollo se realizó con asistencia de IA. La revisión del código, los controles y las limitaciones documentadas forman parte del trabajo presentado.
 
-## Abrir en VS Code
+## Cómo se conectan las piezas
 
-Abre `agentes-financieros.code-workspace`, que está en esta carpeta. Se recomienda Python 3.12. Instala las extensiones oficiales Python y Jupyter de Microsoft. VS Code es el editor; Python ejecuta el modelo; GitHub conserva las versiones que se confirman mediante commits y se suben al remoto.
-
-El equipo de Chumi tiene VS Code, pero el lanzador `py` no detectó una instalación personal de Python al revisar esta base. Instala Python desde [python.org](https://www.python.org/downloads/windows/) si `py -0p` sigue sin mostrar intérpretes. El Python interno de Codex es un entorno aparte.
-
-## Preparación inicial en Windows
-
-Abre Terminal > New Terminal dentro de esta carpeta y ejecuta los siguientes comandos, uno a la vez. No necesitas activar el entorno, por lo que no deberías encontrar el bloqueo de scripts de PowerShell.
-
-```powershell
-py -3.12 -m venv .venv
+```mermaid
+flowchart TD
+    A[Fuentes financieras] --> B[01 Idea y 02 Research con IA y revisión humana]
+    B --> C[Fichas y evidencia por empresa]
+    D[Configuración JSON] --> E[CLI analisis.py]
+    F[Datos de mercado o insumos guardados] --> E
+    E --> G[Motor cuantitativo Python]
+    G --> H[03 Resultados, gráficos y manifiesto]
+    C --> I[04 Debate de argumentos con IA]
+    H --> I
+    I --> J[Informe y preguntas para el analista]
 ```
 
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+Las fichas conectan las etapas. Cada etapa se ejecuta cuando se solicita; crear una empresa no inicia una investigación. La decisión de inversión corresponde al usuario.
+
+**Tecnologías:** Python 3.12, NumPy, pandas, SciPy, `arch`, statsmodels, Matplotlib, `yfinance`, `unittest`, Jupyter, Git y skills de Codex. El almacenamiento actual usa archivos CSV, JSON y Markdown.
+
+## Caso demostrable: Apple frente a SPY
+
+El [expediente AAPL](empresas/AAPL/Inicio.md) reúne idea, research, análisis cuantitativo y debate. La evidencia financiera tiene corte al **23 de octubre de 2026** y el debate fue elaborado el **24 de octubre de 2026**. Son resultados históricos; editar este README no actualiza sus datos.
+
+Para revisar el proyecto desde la pregunta financiera hasta el cálculo:
+
+1. Leer el [research del negocio](empresas/AAPL/02_research/2026-10-23_AAPL_research.md) y sus faltantes declarados.
+2. Abrir el [resumen de la corrida REAL frente a SPY](empresas/AAPL/03_cuantitativo/2026-10-23_230246_610362_SPY_REAL/resumen.md) y su [manifiesto](empresas/AAPL/03_cuantitativo/2026-10-23_230246_610362_SPY_REAL/manifest.json).
+3. Revisar el [control de la repetición numérica histórica](empresas/AAPL/03_cuantitativo/2026-10-23_AAPL_verificacion_03.json), que documenta coincidencia exacta de los resultados en aquella repetición.
+4. Seguir el [debate](empresas/AAPL/04_debate/2026-10-24_AAPL_debate.md) hasta sus conclusiones y preguntas pendientes.
+
+No se atribuye rentabilidad de inversión al uso de la herramienta. La decisión personal sigue pendiente.
+
+## Ejecutar una demostración
+
+Desde la raíz del repositorio, en macOS y con Python 3.12 instalado:
+
+```bash
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python analisis.py ejecutar --empresa AAPL --demo
 ```
 
-Criterio de término: la instalación termina sin errores y existe `.venv\Scripts\python.exe`. En VS Code selecciona ese intérprete en Python: Select Interpreter. En el notebook selecciona el mismo entorno en Select Kernel.
+En VS Code, seleccionar `.venv/bin/python` como intérprete; para usar el notebook, seleccionar también ese entorno como kernel. El notebook está en [`notebooks/`](notebooks/).
 
-`requirements-modelo.txt` fija las versiones principales usadas en las pruebas. `ipykernel` agrega el soporte para ejecutar desde el notebook.
+La instalación requiere internet. Una vez instaladas las dependencias, **DEMO no descarga datos bursátiles**: usa precios sintéticos y crea una carpeta nueva dentro de `empresas/AAPL/03_cuantitativo/`, con resumen, ficha, precios, resultados, seis gráficos y manifiesto. Sus cifras solo sirven para comprobar funcionamiento.
 
-## Crear una empresa y probar
+**Validación del 4.nov.2026:** siete pruebas aprobadas y DEMO completa sobre una copia de la versión publicada, usando Python 3.12.14 en macOS ARM64. Las pruebas cubren casos estadísticos y protección de expedientes; no constituyen una auditoría completa del modelo. Las versiones principales están fijadas en [`requirements-modelo.txt`](requirements-modelo.txt).
 
-```powershell
-.\.venv\Scripts\python.exe analisis.py crear
+### Repetir el caso histórico sin consultar datos nuevos
+
+```bash
+.venv/bin/python analisis.py ejecutar --repetir "empresas/AAPL/03_cuantitativo/2026-10-23_230246_610362_SPY_REAL"
 ```
 
-Te pide el ticker y el comparador. Para probar puedes usar AAPL y SPY, que ya aparecen en el material. Son ejemplos, no una selección de inversión. El script crea las cuatro carpetas, `config.json`, `Inicio.md` y `Bitacora.md` a partir de las plantillas. Conserva los archivos existentes. La portada nueva comienza con investigación pendiente; actualizar los índices generales al incorporar una empresa real.
+Se reutilizan los precios, las opciones y la configuración guardados. Se comprueban sus huellas y se genera otra carpeta. El motor y las versiones pueden afectar la igualdad numérica: el programa informa diferencias respecto del manifiesto original.
 
-```powershell
-.\.venv\Scripts\python.exe analisis.py ejecutar --empresa AAPL --demo
+### Crear otra empresa o descargar datos actuales
+
+```bash
+.venv/bin/python analisis.py crear --ticker MSFT --benchmark SPY
+.venv/bin/python analisis.py ejecutar --empresa MSFT
 ```
 
-Criterio de término: imprime la carpeta nueva y esta contiene `resumen.md`, `ficha_03.md`, un CSV de precios sintéticos, JSON de resultados, `manifest.json` y gráficos. DEMO prueba el funcionamiento y no describe a Apple ni al S&P 500.
+El primer comando prepara el expediente y conserva archivos existentes. El segundo consulta Yahoo Finance y requiere conexión e historia suficiente. Los tickers son ejemplos de uso. Revisar `config.json`, moneda, comparador y supuestos antes de una corrida REAL; un error o falta de datos no se reemplaza por resultados DEMO.
 
-## Correr con datos reales
-
-Revisa `empresas/AAPL/config.json`: ticker, benchmark, moneda y supuestos. El 4% inicial es un supuesto del profesor, no una tasa vigente comprobada. Si actualizas la tasa, anota su fuente y fecha. La descarga requiere internet en el proceso de Python y puede fallar por límites de Yahoo.
-
-```powershell
-.\.venv\Scripts\python.exe analisis.py ejecutar --empresa AAPL
-```
-
-Para otro comparador en una corrida, sin cambiar la configuración guardada:
-
-```powershell
-.\.venv\Scripts\python.exe analisis.py ejecutar --empresa AAPL --benchmark MSFT
-```
-
-SPY representa un ETF del S&P 500 con precios ajustados. Un índice de precios y un ETF con dividendos ajustados no son equivalentes. Otra empresa sirve para comparación relativa, pero no representa todo el mercado. El ejecutor verifica que ambos instrumentos tengan la moneda declarada; no implementa conversión cambiaria.
-
-## Estructura de una empresa
+## Estructura del repositorio
 
 ```text
-empresas/
-  AAPL/
-    Inicio.md           entrada, fechas, fichas y pendientes
-    Bitacora.md         avances y cambios fechados
-    config.json
-    01_idea/             brief y ficha 01
-    02_research/         informe y ficha 02
-    03_cuantitativo/
-      fecha_hora_SPY_REAL/
-        config.json
-        resumen.md
-        ficha_03.md
-        manifest.json
-        opciones.json
-        dependencias.txt
-        precios.csv y resultados.json con prefijo del ticker
-        gráficos PNG
-    04_debate/           evidencia, aperturas, réplicas y decisión
+analisis.py                 CLI, validación, captura y repetición
+src/modelo_curso.py         motor cuantitativo compartido
+config/ejemplo.json         parámetros iniciales para nuevas empresas
+tests/                     pruebas con unittest
+.agents/skills/             procedimientos de las cuatro etapas
+empresas/TICKER/            configuración, fuentes, informes y bitácora
+  01_idea/                 selección y ficha inicial
+  02_research/             negocio, competencia y fuentes
+  03_cuantitativo/          una carpeta por corrida
+  04_debate/               evidencia y contraste de argumentos
+notebooks/                 acceso al mismo motor desde Jupyter
+material_curso/             originales de referencia
+docs/                      revisión, validación y guías
 ```
 
-La fecha y hora evitan sobrescribir corridas del mismo día. Un comparador distinto genera otra corrida dentro de la misma empresa.
+Las corridas DEMO, los entornos y los PNG cuantitativos regenerables se excluyen de Git. Los datos y controles de corridas reales se conservan. Los PDF de lectura permiten revisar resultados sin ejecutar Python.
 
-## Reproducir una corrida
+## Alcance y próximos pasos
 
-En `--repetir` pega la ruta de la carpeta completa entre comillas. Se reutilizan los precios y las opciones de esa carpeta; no se descarga información nueva. Debes conservar las mismas versiones del archivo `dependencias.txt` y el mismo motor para comparar numéricamente.
+- **Modelo financiero:** estudia retornos y riesgo. No calcula valor intrínseco ni precios objetivo. La tasa inicial de 4% anual es un supuesto docente sin validación como tasa vigente; las simulaciones dependen de sus supuestos.
+- **Validación:** el test de VaR está dentro de muestra. R² mide asociación con el comparador, no causalidad. No se ha acreditado capacidad predictiva fuera de muestra.
+- **IA:** los roles del debate comparten evidencia y modelo; no representan verificaciones externas independientes. Las fuentes y las conclusiones requieren revisión humana.
+- **Estado de ingeniería:** herramienta local por terminal. No incorpora SQL/PostgreSQL, backend FastAPI, frontend React, Docker, CI/CD ni despliegue cloud.
+- **Dominio:** el caso implementado es de acciones cotizadas. No cubre gestión de portafolios de activos alternativos, capital calls, distribuciones ni conciliación de flujos.
 
-```powershell
-.\.venv\Scripts\python.exe analisis.py ejecutar --repetir "RUTA_COMPLETA_DE_LA_CORRIDA"
-```
+Como evolución del proyecto, los pasos propuestos son automatizar las pruebas en CI, estructurar y validar un tipo acotado de reporte financiero mediante una API de LLM y persistir esa información en SQL. Son trabajo futuro, sin implementación en esta versión.
 
-La repetición genera una carpeta nueva. Si cambiaste los precios, las opciones o la configuración original, el script lo detecta mediante huellas. Para trasladar la corrida a otro equipo, copia la carpeta completa, usa el mismo Python y las versiones indicadas en `dependencias.txt`.
-
-## Usar las skills en Codex
-
-Abre Codex con esta carpeta como proyecto de trabajo. Las skills están dentro de `.agents/skills/`, el formato por proyecto. Si no aparecen al abrir el proyecto, reinicia Codex. En este chat también se pueden leer y usar indicando su ruta.
-
-Puedes pedir en lenguaje normal: "Usa la skill de idea generation del curso" o "Analiza cuantitativamente la empresa guardada y explica el resumen". Las cuatro skills conservan el procedimiento del profesor, con adaptaciones de almacenamiento y entorno. Las etapas 01, 02 y 03 de Apple ya se ejecutaron con datos reales. La etapa 04 contrastó esas fichas en un debate con aperturas separadas, revisión y réplicas; no se incorporaron datos nuevos y la decisión personal sigue pendiente. En la etapa 03 se mantuvo el 4% como supuesto docente; FRED DTB3 se documentó solo como referencia, sin sustituir esa tasa.
-
-## Errores habituales
-
-`No such file or directory`: la terminal debe estar en la carpeta que contiene `analisis.py`. Las carpetas de empresas se crean con `crear`, no a mano. `No module named`: instala las librerías en el mismo `.venv` que seleccionaste. `IndentationError`: usa estos archivos completos sin pegar funciones sueltas. Si Yahoo no devuelve datos, revisa ticker y conexión; no reemplaces datos reales por DEMO para completar una investigación.
-
-## Propuesta para avanzar
-
-La primera empresa ya cuenta con las cuatro etapas. La organización local del 28.oct.2026 se documenta en `docs/organizacion.md`. El repositorio privado se creó ese día y se configuró como `origin`. El siguiente paso de organización es abrir esta carpeta como vault propio de Obsidian. Los chats nuevos por empresa deben abrirse dentro del proyecto Agente Financiero. Los cambios locales y los commits no se suben solos: confirmar cada envío y registrar el estado de los respaldos de Drive por separado.
-
-La nueva política de Git conserva archivos de auditoría y datos de corridas reales. Excluye `.venv`, cachés, secretos, ZIP, corridas DEMO y PNG cuantitativos; los archivos excluidos permanecen en disco. No se deben borrar ni reescribir las huellas históricas para ajustarlas a cambios del ejecutor.
-
-Fuentes de configuración: [notebooks en VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks), [skills de Codex](https://learn.chatgpt.com/docs/build-skills), [yfinance](https://ranaroussi.github.io/yfinance/).
+Para profundizar: [revisión del modelo](docs/revision.md), [validación inicial](docs/validacion.md), [recorrido técnico](docs/recorrido.md), [glosario](Glosario.md) y [portada de trabajo](Inicio.md).
