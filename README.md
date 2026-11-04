@@ -2,7 +2,7 @@
 
 Herramienta de investigación de empresas que combina un motor cuantitativo en Python con un flujo de trabajo asistido por IA. Organiza fuentes, calcula métricas de riesgo y conserva los datos y supuestos necesarios para revisar cómo se llegó a cada resultado.
 
-Proyecto personal de **José Domingo Urrutia**, desarrollado con asistencia de IA para integrar investigación financiera, análisis de riesgo y trazabilidad en una herramienta reutilizable por empresa. El trabajo incluye ejecución parametrizable, validación de datos, pruebas y documentación técnica. Es un prototipo funcional, con un caso histórico de Apple disponible para revisión.
+Proyecto personal de **José Domingo Urrutia**, desarrollado con asistencia de IA para investigar empresas, implementar análisis cuantitativo de riesgo en Python y contrastar una tesis de inversión. El trabajo abarca el levantamiento y análisis de información financiera, la adaptación del motor cuantitativo y la integración de sus resultados al debate entre agentes, con validaciones y registros para repetir los cálculos. Es un prototipo funcional, aplicado a un caso histórico de Apple.
 
 **Revisar en pocos minutos:** [caso Apple](empresas/AAPL/Inicio.md) · [ejecutor Python](analisis.py) · [pruebas](tests/test_analisis.py) · [informe cuantitativo PDF](empresas/AAPL/03_cuantitativo/2026-10-23_AAPL_lectura_03.pdf)
 
@@ -16,7 +16,7 @@ Este proyecto reúne la investigación por empresa y conecta tres piezas: **evid
 
 | Etapa | Pregunta financiera y trabajo realizado |
 | --- | --- |
-| 01 Idea de inversión | Seleccionar una empresa y definir las preguntas que justifican estudiarla. |
+| 01 Generación de ideas de inversión | Identificar posibles empresas para investigar, seleccionar una y definir las preguntas que justifican estudiarla. |
 | 02 Research fundamental y competitivo | Examinar el negocio, su desempeño financiero, posición competitiva, entorno y riesgos, con fuentes fechadas. |
 | 03 Análisis cuantitativo de riesgo | Comparar la acción con un benchmark y estudiar retornos, volatilidad, drawdowns y escenarios mediante simulación Monte Carlo. |
 | 04 Debate de la tesis | Tres agentes con roles alcista, bajista y neutral contrastan argumentos sobre la misma evidencia; el rol neutral revisa su respaldo, los desacuerdos y los faltantes. |
@@ -39,10 +39,13 @@ La investigación y el debate se realizan desde Codex con revisión de fuentes y
 
 ## Desarrollo y decisiones técnicas
 
-El trabajo de desarrollo se concentra en convertir el flujo de análisis en una herramienta reutilizable, conservar la evidencia de cada ejecución y agregar controles para revisar los resultados.
+Mi contribución abarca el análisis de información financiera, la implementación y adaptación del análisis cuantitativo en Python y la integración de sus resultados al debate de inversión. El caso Apple permite revisar ese trabajo desde las fuentes del negocio hasta los cálculos y el contraste de argumentos.
 
 | Trabajo realizado en el proyecto | Evidencia para revisarlo |
 | --- | --- |
+| Levantamiento y análisis de información financiera y competitiva | [Research de Apple y registro de fuentes](empresas/AAPL/02_research/2026-10-23_AAPL_research.md): entorno, Porter, competidores, desempeño financiero, riesgos y faltantes. |
+| Implementación y adaptación del análisis cuantitativo en Python | [Motor](src/modelo_curso.py), [lectura de resultados de Apple](empresas/AAPL/03_cuantitativo/2026-10-23_AAPL_lectura_03.md) y [revisión de las correcciones](docs/revision.md). |
+| Integración de fundamentos y resultados cuantitativos al debate | [Paquete de evidencia](empresas/AAPL/04_debate/2026-10-24_AAPL_paquete_evidencia.md) y [debate de Apple](empresas/AAPL/04_debate/2026-10-24_AAPL_debate.md), con aperturas, réplicas, revisión neutral y preguntas pendientes. |
 | Separación entre motor, ejecución y parámetros por empresa | [`src/modelo_curso.py`](src/modelo_curso.py), [`analisis.py`](analisis.py) y [`config/ejemplo.json`](config/ejemplo.json). |
 | Creación de expedientes sin sobrescribir configuración ni notas existentes | Función `create()` y pruebas de conservación y separación de empresas en [`tests/test_analisis.py`](tests/test_analisis.py). |
 | Conservación de insumos para repetir cálculos sin descargar datos nuevos | Opción `--repetir`, captura de opciones y [manifiesto de Apple](empresas/AAPL/03_cuantitativo/2026-10-23_230246_610362_SPY_REAL/manifest.json). |
